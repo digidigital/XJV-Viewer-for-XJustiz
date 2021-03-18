@@ -6,7 +6,7 @@ Siehe https://xjustiz.justiz.de/
 
 Dieser Datensatz wird bei der Kommunikation mittels EGVP, beA, eBO, beBPo, etc. eingesetzt. Besondere Relevanz hat in diesem Zusammenhang auch die Akteneinsicht, die von immer mehr Behörden in Form von PDF-Dateien und begleitendem XJustiz-Datensatz gewährt wird.   
 
-Sofern kein Akteneinsichtsportal angebunden wird, ist zur Anzeige ein geeignetes Anzeigeprogramm / XJustiz-Viewer notwendig. Stand März/2021 ist mir kein kommerzielles Produkt bekannt, dass den Standard in der geschilderten Form unterstützt. Eine bereits existierende Alternative stellt der XJustiz-Viewer von https://ervjustiz.de/ dar.
+Sofern kein Akteneinsichtsportal angebunden wird, ist zur Anzeige ein geeignetes Anzeigeprogramm / XJustiz-Viewer notwendig. Stand März/2021 ist mir kein kommerzielles Produkt bekannt, das den Standard in der geschilderten Form unterstützt. Eine bereits existierende Alternative stellt der XJustiz-Viewer von https://ervjustiz.de/ dar.
 
 Das Ziel von XJustiz2HTMLviewer ist die Bereitstellung einer einfachen Lösung zur Umwandlung der XJustiz-Datei in ein HTML-Dokument mit einem einfachen Aktenviewer. Nach der Umwandlung wird lediglich ein Browser zur Anzeige der Akte benötigt.  
 
