@@ -4,7 +4,7 @@
   xmlns:tns="http://www.xjustiz.de"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xsl:output method="htmll" encoding="utf-8" version="" indent="yes"/>
+  <xsl:output method="html" encoding="utf-8" version="" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <!--
