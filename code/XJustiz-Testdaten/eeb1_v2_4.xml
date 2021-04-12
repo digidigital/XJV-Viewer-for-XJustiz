@@ -4,9 +4,7 @@
         <ns2:aktenzeichen.absender>Testaktenzeichen Empfaenger</ns2:aktenzeichen.absender>
         <ns2:aktenzeichen.empfaenger>12345BG1234567 987654321</ns2:aktenzeichen.empfaenger>
         <ns2:erstellungszeitpunkt>2019-05-28T14:09:07.417</ns2:erstellungszeitpunkt>
-        <ns2:absender_RVTraeger listVersionID="2.0">
-            <code>15</code>
-        </ns2:absender_RVTraeger>
+        <ns2:absender_Sonstige>Testempfaenger-Sonstige</ns2:absender_Sonstige>
         <ns2:empfaenger_Gericht listVersionID="2.6">
             <code>A1001S</code>
         </ns2:empfaenger_Gericht>

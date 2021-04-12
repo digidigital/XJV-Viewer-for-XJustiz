@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nachricht.gds.uebermittlung_schriftgutobjekte.0005005
+        xmlns:ns2="http://www.xjustiz.de"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.xjustiz.de xjustiz_0005_nachrichten_2_4.xsd">
+    <ns2:nachrichtenkopf>
+        <ns2:aktenzeichen.absender>Testaktenzeichen Sender#1234</ns2:aktenzeichen.absender>
+        <ns2:aktenzeichen.empfaenger>12345BG1234567 987654321</ns2:aktenzeichen.empfaenger>
+        <ns2:erstellungszeitpunkt>2019-03-25T14:31:12.930+01:00</ns2:erstellungszeitpunkt>
+        <ns2:absender_Sonstige>Testsender</ns2:absender_Sonstige>
+        <ns2:empfaenger_Sonstige>Testempfaenger</ns2:empfaenger_Sonstige>
+        <ns2:eigene_Nachrichten_ID>5558aeab-4b75-44db-80e5-7219da4751a2</ns2:eigene_Nachrichten_ID>
+    </ns2:nachrichtenkopf>
+    <ns2:grunddaten xjustizVersion="2.4.0">
+        <ns2:verfahrensdaten>
+            <ns2:instanzdaten_erweitert>
+                <ns2:instanzdaten>
+                    <ns2:instanznummer>1</ns2:instanznummer>
+                    <ns2:sachgebiet listVersionID="2.1">
+                        <code>055</code>
+                    </ns2:sachgebiet>
+                    <ns2:instanzbehoerde>
+                        <ns2:gericht listVersionID="2.6">
+                            <code>9A0000</code>
+                        </ns2:gericht>
+                    </ns2:instanzbehoerde>
+                    <ns2:aktenzeichen>12345BG1234567 987654321</ns2:aktenzeichen>
+                </ns2:instanzdaten>
+            </ns2:instanzdaten_erweitert>
+            <ns2:herstellerinformation>
+                <ns2:nameDesProdukts>E-JUSTIZ-BA</ns2:nameDesProdukts>
+                <ns2:herstellerDesProdukts>Bundesagentur für Arbeit</ns2:herstellerDesProdukts>
+                <ns2:version>1.0</ns2:version>
+            </ns2:herstellerinformation>
+        </ns2:verfahrensdaten>
+    </ns2:grunddaten>
+    <ns2:dokument>
+        <ns2:identifikation>
+            <ns2:id>d87f200a-814d-4475-af06-4b90b59cec96</ns2:id>
+        </ns2:identifikation>
+        <ns2:dokumententyp listVersionID="2.1">
+            <code>004</code>
+        </ns2:dokumententyp>
+        <ns2:akteneinsicht>true</ns2:akteneinsicht>
+        <ns2:datei>
+            <ns2:dateiname>Testdokumentname 01</ns2:dateiname>
+            <ns2:dateiformat listVersionID="1.0">
+                <code>018</code>
+            </ns2:dateiformat>
+            <ns2:bestandteil listVersionID="2.1">
+                <code>001</code>
+            </ns2:bestandteil>
+        </ns2:datei>
+        <ns2:datei>
+            <ns2:dateiname>Testdokumentname 02</ns2:dateiname>
+            <ns2:dateiformat listVersionID="1.0">
+                <code>018</code>
+            </ns2:dateiformat>
+            <ns2:bestandteil listVersionID="2.1">
+                <code>001</code>
+            </ns2:bestandteil>
+        </ns2:datei>
+        <ns2:ruecksendung_EEB_erforderlich>false</ns2:ruecksendung_EEB_erforderlich>
+    </ns2:dokument>
+</ns2:nachricht.gds.uebermittlung_schriftgutobjekte.0005005>

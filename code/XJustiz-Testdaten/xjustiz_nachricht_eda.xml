@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nachricht.gds.uebermittlung_schriftgutobjekte.0005005 xmlns:ns2="http://www.xjustiz.de">
+    <ns2:nachrichtenkopf>
+        <ns2:aktenzeichen.absender>Testaktenzeichen Sender</ns2:aktenzeichen.absender>
+        <ns2:aktenzeichen.empfaenger>12345BG1234567 987654321</ns2:aktenzeichen.empfaenger>
+        <ns2:erstellungszeitpunkt>2019-03-25T14:31:12.930+01:00</ns2:erstellungszeitpunkt>
+        <ns2:absender_Sonstige>Testsender</ns2:absender_Sonstige>
+        <ns2:empfaenger_Gericht listVersionID="2.6">
+            <code>9D0000</code>
+        </ns2:empfaenger_Gericht>
+        <ns2:eigene_Nachrichten_ID>5558aeab-4b75-44db-80e5-7219da4751a2</ns2:eigene_Nachrichten_ID>
+    </ns2:nachrichtenkopf>
+    <ns2:grunddaten xjustizVersion="2.4.0">
+        <ns2:verfahrensdaten>
+            <ns2:instanzdaten_erweitert>
+                <ns2:instanzdaten>
+                    <ns2:instanznummer>1</ns2:instanznummer>
+                    <ns2:sachgebiet listVersionID="2.1">
+                        <code>053</code>
+                    </ns2:sachgebiet>
+                    <ns2:instanzbehoerde>
+                        <ns2:gericht listVersionID="2.6">
+                            <code>9D0000</code>
+                        </ns2:gericht>
+                    </ns2:instanzbehoerde>
+                    <ns2:aktenzeichen>12345BG1234567 987654321</ns2:aktenzeichen>
+                </ns2:instanzdaten>
+            </ns2:instanzdaten_erweitert>
+            <ns2:herstellerinformation>
+                <ns2:nameDesProdukts>E-JUSTIZ-BA</ns2:nameDesProdukts>
+                <ns2:herstellerDesProdukts>Bundesagentur für Arbeit</ns2:herstellerDesProdukts>
+                <ns2:version>1.0</ns2:version>
+            </ns2:herstellerinformation>
+        </ns2:verfahrensdaten>
+    </ns2:grunddaten>
+  	<ns2:akte>
+        <ns2:identifikation>
+            <ns2:id>bfba5615-5679-43c6-8f81-2f7da6c341d5</ns2:id>
+            <ns2:nummerImUebergeordnetenContainer>1</ns2:nummerImUebergeordnetenContainer>
+        </ns2:identifikation>
+        <ns2:aktentyp>
+            <code>018</code>
+        </ns2:aktentyp>
+		<ns2:anzeigename>Vermittlung/Beratung</ns2:anzeigename>
+        <ns2:aktenzeichen>
+            <ns2:az_Inhalt>970D015534</ns2:az_Inhalt>
+        </ns2:aktenzeichen>
+		<ns2:weiteres_ordnungskriterium_der_behoerde>991</ns2:weiteres_ordnungskriterium_der_behoerde>
+		<ns2:erstellungszeitpunkt_der_akte_fuer_den_versand>2019-11-19T21:32:52+02:00</ns2:erstellungszeitpunkt_der_akte_fuer_den_versand>
+        <ns2:inhalt>
+			<ns2:dokument>
+				<ns2:identifikation>
+					<ns2:id>4fd78de7-ea61-4b08-9114-a6b76f9b97ef</ns2:id>
+					<ns2:nummerImUebergeordnetenContainer>4</ns2:nummerImUebergeordnetenContainer>
+				</ns2:identifikation>
+				<ns2:dokumententyp>
+					<code>ANTRAG</code>
+				</ns2:dokumententyp>
+				<ns2:anzeigename>EDA_MBA_29_10_2020_885779_E73B544984656E6F183DA255E044D20E.eda</ns2:anzeigename>
+				<ns2:akteneinsicht>false</ns2:akteneinsicht>
+				<ns2:eingangszeitpunkt>2020-09-04T12:38:17+02:00</ns2:eingangszeitpunkt>
+				<ns2:datei>
+					<ns2:dateiname>EDA_MBA_29_10_2020_885779_E73B544984656E6F183DA255E044D20E.eda</ns2:dateiname>
+					<ns2:dateiformat>
+						<code>100</code>
+					</ns2:dateiformat>
+					<ns2:bestandteil>
+						<code>001</code>
+					</ns2:bestandteil>
+				</ns2:datei>
+				<ns2:ruecksendung_EEB_erforderlich>false</ns2:ruecksendung_EEB_erforderlich>
+			</ns2:dokument>
+			<ns2:teilakte>
+				<ns2:identifikation>
+					<ns2:id>b804b6be-7817-4914-b56c-4e0d66e93569</ns2:id>
+					<ns2:nummerImUebergeordnetenContainer>1</ns2:nummerImUebergeordnetenContainer>
+				</ns2:identifikation>
+				<ns2:teilaktentyp>
+					<code>001</code>
+				</ns2:teilaktentyp>
+				<ns2:anzeigename>Mahn-Antrag</ns2:anzeigename>
+				<ns2:akteneinsicht>false</ns2:akteneinsicht>
+				<ns2:inhalt>
+				<ns2:dokument>
+					<ns2:identifikation>
+						<ns2:id>5711660a-730d-4b1f-bc91-793e54475a90</ns2:id>
+						<ns2:nummerImUebergeordnetenContainer>1</ns2:nummerImUebergeordnetenContainer>
+					</ns2:identifikation>
+					<ns2:dokumententyp>
+						<code>ANTRAG</code>
+					</ns2:dokumententyp>
+					<ns2:anzeigename>EDA_MBA_29_10_2020_885779_E73B544984656E6F183DA255E044D20E.eda</ns2:anzeigename>
+					<ns2:akteneinsicht>false</ns2:akteneinsicht>
+					<ns2:eingangszeitpunkt>2019-11-06T19:22:33+02:00</ns2:eingangszeitpunkt>
+					<ns2:datei>
+						<ns2:dateiname>EDA_MBA_29_10_2020_885779_E73B544984656E6F183DA255E044D20E.eda</ns2:dateiname>
+						<ns2:dateiformat>
+							<code>100</code>
+						</ns2:dateiformat>
+						<ns2:bestandteil>
+							<code>001</code>
+						</ns2:bestandteil>
+					</ns2:datei>															
+					<ns2:ruecksendung_EEB_erforderlich>false</ns2:ruecksendung_EEB_erforderlich>
+				</ns2:dokument>
+				</ns2:inhalt>
+				<ns2:ruecksendung_EEB_erforderlich>false</ns2:ruecksendung_EEB_erforderlich>
+			</ns2:teilakte>
+        </ns2:inhalt>
+        <ns2:ruecksendung_EEB_erforderlich>false</ns2:ruecksendung_EEB_erforderlich>
+    </ns2:akte>
+</ns2:nachricht.gds.uebermittlung_schriftgutobjekte.0005005>

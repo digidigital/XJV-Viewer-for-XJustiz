@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:nachricht.gds.uebermittlungSchriftgutobjekte.0005005 xsi:schemaLocation="http://www.xjustiz.de xjustiz_0005_nachrichten_3_0.xsd"
+                                                       xmlns:ns0="http://www.xjustiz.de"
+                                                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:nachrichtenkopf xjustizVersion="3.2.1">
+        <ns0:aktenzeichen.absender>12345BG1234567 987654321</ns0:aktenzeichen.absender>
+        <ns0:aktenzeichen.empfaenger>Testaktenzeichen Empfaenger</ns0:aktenzeichen.empfaenger>
+        <ns0:erstellungszeitpunkt>2020-01-20T13:39:57.495+01:00</ns0:erstellungszeitpunkt>
+        <ns0:auswahl_absender>
+            <ns0:absender.gericht listVersionID="3.2">
+                <code>A1001S</code>
+            </ns0:absender.gericht>
+        </ns0:auswahl_absender>
+        <ns0:auswahl_empfaenger>
+            <ns0:empfaenger.rvTraeger>
+                <code>15</code>
+            </ns0:empfaenger.rvTraeger>
+        </ns0:auswahl_empfaenger>
+        <ns0:eigeneNachrichtenID>5558aeab-4b75-44db-80e5-7219da4751a2</ns0:eigeneNachrichtenID>
+        <ns0:herstellerinformation>
+            <ns0:nameDesProdukts>E-JUSTIZ-BA</ns0:nameDesProdukts>
+            <ns0:herstellerDesProdukts>Bundesagentur für Arbeit</ns0:herstellerDesProdukts>
+            <ns0:version>2.0</ns0:version>
+        </ns0:herstellerinformation>
+    </ns0:nachrichtenkopf>
+    <ns0:grunddaten>
+        <ns0:verfahrensdaten>
+            <ns0:instanzdaten>
+                <ns0:instanznummer>1</ns0:instanznummer>
+                <ns0:sachgebiet>
+                    <code>053</code>
+                </ns0:sachgebiet>
+                <ns0:auswahl_instanzbehoerde>
+                    <ns0:gericht listVersionID="">
+                        <code>A1001S</code>
+                    </ns0:gericht>
+                </ns0:auswahl_instanzbehoerde>
+                <ns0:aktenzeichen>
+                    <ns0:auswahl_aktenzeichen>
+                        <ns0:aktenzeichen.freitext>12345BG1234567 987654321</ns0:aktenzeichen.freitext>
+                    </ns0:auswahl_aktenzeichen>
+                </ns0:aktenzeichen>
+            </ns0:instanzdaten>
+        </ns0:verfahrensdaten>
+    </ns0:grunddaten>
+    <ns0:schriftgutobjekte>
+        <ns0:dokument>
+            <ns0:identifikation>
+                <ns0:id>d87f200a-814d-4475-af06-4b90b59cec96</ns0:id>
+                <ns0:nummerImUebergeordnetenContainer>1</ns0:nummerImUebergeordnetenContainer>
+            </ns0:identifikation>
+            <ns0:xjustiz.fachspezifischeDaten>
+                <ns0:dokumentklasse listVersionID="">
+                    <code>001</code>
+                </ns0:dokumentklasse>
+                <ns0:akteneinsicht>false</ns0:akteneinsicht>
+                <ns0:datei>
+                    <ns0:dateiname>Testdokumentname 01</ns0:dateiname>
+                    <ns0:bestandteil>
+                        <code>001</code>
+                    </ns0:bestandteil>
+                </ns0:datei>
+                <ns0:datei>
+                    <ns0:dateiname>Testdokumentname 02</ns0:dateiname>
+                    <ns0:bestandteil>
+                        <code>001</code>
+                    </ns0:bestandteil>
+                </ns0:datei>
+                <ns0:ruecksendungEEB.erforderlich>true</ns0:ruecksendungEEB.erforderlich>
+            </ns0:xjustiz.fachspezifischeDaten>
+        </ns0:dokument>
+    </ns0:schriftgutobjekte>
+</ns0:nachricht.gds.uebermittlungSchriftgutobjekte.0005005>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:nachricht.gds.uebermittlung_schriftgutobjekte.0005005
+        xmlns:tns="http://www.xjustiz.de"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.xjustiz.de xjustiz_0005_nachrichten_2_2.xsd">
+    <tns:nachrichtenkopf>
+        <tns:aktenzeichen.absender>S 1 30/19</tns:aktenzeichen.absender>
+        <tns:aktenzeichen.empfaenger>AZ unbekannt</tns:aktenzeichen.empfaenger>
+        <tns:erstellungszeitpunkt>2019-07-25T15:55:12.299</tns:erstellungszeitpunkt>
+        <tns:absender_Gericht listVersionID="2.3">
+            <code>B6234</code>
+        </tns:absender_Gericht>
+        <tns:empfaenger_Sonstige>Operativer Service
+            AA Dankinsel PINT
+            Moltkestraße 11
+            46535 Dinslaken
+        </tns:empfaenger_Sonstige>
+        <tns:eigene_Nachrichten_ID>8E417086-0264-5F8F-E053-05BC7F0AB0C8</tns:eigene_Nachrichten_ID>
+    </tns:nachrichtenkopf>
+    <tns:grunddaten xjustizVersion="2.2.1">
+        <tns:verfahrensdaten>
+            <tns:instanzdaten_erweitert>
+                <tns:instanzdaten>
+                    <tns:instanznummer>1</tns:instanznummer>
+                    <tns:sachgebiet listVersionID="2.1">
+                        <code>055</code>
+                    </tns:sachgebiet>
+                    <tns:instanzbehoerde>
+                        <tns:gericht listVersionID="2.3">
+                            <code>B6234</code>
+                        </tns:gericht>
+                    </tns:instanzbehoerde>
+                    <tns:aktenzeichen>S 1 30/19</tns:aktenzeichen>
+                    <tns:kurzrubrum>Schwarz ./. Bundesagentur für Arbeit</tns:kurzrubrum>
+                </tns:instanzdaten>
+                <tns:verfahrensgegenstand_Zeitraum>
+                    <tns:verfahrensgegenstand>
+                        <tns:gegenstand/>
+                    </tns:verfahrensgegenstand>
+                </tns:verfahrensgegenstand_Zeitraum>
+            </tns:instanzdaten_erweitert>
+            <tns:herstellerinformation>
+                <tns:nameDesProdukts>VIS-Justiz</tns:nameDesProdukts>
+                <tns:herstellerDesProdukts>PDV-Systeme Erfurt GmbH</tns:herstellerDesProdukts>
+                <tns:version>6.3.31</tns:version>
+            </tns:herstellerinformation>
+        </tns:verfahrensdaten>
+    </tns:grunddaten>
+    <tns:dokument>
+        <tns:identifikation>
+            <tns:id>884641B3-B327-4A73-E053-05BC7F0AB13D</tns:id>
+        </tns:identifikation>
+        <tns:dokumententyp listVersionID="2.0">
+            <code>004</code>
+        </tns:dokumententyp>
+        <anzeigename xmlns="http://www.xjustiz.de">Leseab. 07.05.2019</anzeigename>
+        <tns:akteneinsicht>true</tns:akteneinsicht>
+        <tns:dokumentendatum>2019-05-07</tns:dokumentendatum>
+        <tns:absenderanzeigename/>
+        <tns:adressatanzeigename/>
+        <justizkostenrelevanz xmlns="http://www.xjustiz.de">false</justizkostenrelevanz>
+        <tns:datei>
+            <tns:dateiname>884641B3-B327-4A73-E053-05BC7F0AB13D_Bundesagentur_für_Arbeit.pdf</tns:dateiname>
+            <tns:dateiformat listVersionID="2.0">
+                <code>PDF</code>
+            </tns:dateiformat>
+            <tns:bestandteil listVersionID="2.0">
+                <code>002</code>
+            </tns:bestandteil>
+        </tns:datei>
+        <tns:ruecksendung_EEB_erforderlich>false</tns:ruecksendung_EEB_erforderlich>
+    </tns:dokument>
+    <tns:dokument>
+        <tns:identifikation>
+            <tns:id>884641B3-B329-4A73-E053-05BC7F0AB13D</tns:id>
+        </tns:identifikation>
+        <tns:dokumententyp listVersionID="2.0">
+            <code>001</code>
+        </tns:dokumententyp>
+        <anzeigename xmlns="http://www.xjustiz.de">07.05.2019</anzeigename>
+        <tns:akteneinsicht>true</tns:akteneinsicht>
+        <tns:dokumentendatum>2019-05-07</tns:dokumentendatum>
+        <tns:absenderanzeigename/>
+        <tns:adressatanzeigename/>
+        <justizkostenrelevanz xmlns="http://www.xjustiz.de">false</justizkostenrelevanz>
+        <tns:datei>
+            <tns:dateiname>884641B3-B329-4A73-E053-05BC7F0AB13D_02-S_5_AL_384_16_Klage.pdf</tns:dateiname>
+            <tns:dateiformat listVersionID="2.0">
+                <code>PDF</code>
+            </tns:dateiformat>
+            <tns:bestandteil listVersionID="2.0">
+                <code>002</code>
+            </tns:bestandteil>
+        </tns:datei>
+        <tns:ruecksendung_EEB_erforderlich>true</tns:ruecksendung_EEB_erforderlich>
+    </tns:dokument>
+</tns:nachricht.gds.uebermittlung_schriftgutobjekte.0005005>

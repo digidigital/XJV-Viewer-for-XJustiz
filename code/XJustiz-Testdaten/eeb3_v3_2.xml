@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nachricht.eeb.zuruecklaufend.2200007 xmlns:ns2="http://www.xjustiz.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xjustiz.de xjustiz_2200_eeb_3_0.xsd">
+    <ns2:nachrichtenkopf xjustizVersion="3.2.1">
+        <ns2:aktenzeichen.absender>Testaktenzeichen Empfaenger</ns2:aktenzeichen.absender>
+        <ns2:aktenzeichen.empfaenger>12345BG1234567 987654321</ns2:aktenzeichen.empfaenger>
+        <ns2:erstellungszeitpunkt>2019-05-28T14:09:07.417</ns2:erstellungszeitpunkt>
+        <ns2:auswahl_absender>
+            <ns2:absender.rvTraeger listVersionID="2.0">
+                <code>15</code>
+            </ns2:absender.rvTraeger>
+        </ns2:auswahl_absender>
+        <ns2:auswahl_empfaenger>
+            <ns2:empfaenger.gericht listVersionID="3.2">
+                <code>A1001S</code>
+            </ns2:empfaenger.gericht>
+        </ns2:auswahl_empfaenger>
+        <ns2:eigeneNachrichtenID>55d426ec-ff16-48ac-837e-a2f8ba79a061</ns2:eigeneNachrichtenID>
+        <ns2:fremdeNachrichtenID>5558aeab-4b75-44db-80e5-7219da4751a2</ns2:fremdeNachrichtenID>
+    </ns2:nachrichtenkopf>
+    <ns2:fachdaten>
+        <ns2:empfangsbestaetigung>2019-05-28</ns2:empfangsbestaetigung>
+        <ns2:zustellungsempfaenger.abweichend>false</ns2:zustellungsempfaenger.abweichend>
+    </ns2:fachdaten>
+</ns2:nachricht.eeb.zuruecklaufend.2200007>
