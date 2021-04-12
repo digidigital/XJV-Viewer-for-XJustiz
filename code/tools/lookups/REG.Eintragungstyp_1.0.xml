@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>REG.Eintragungstyp</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Beschreibt die im Handels-, Genossenschafts-, Partnerschafts- und Vereinsregister einzutragenden Eintragungstypen.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>AG-IT-Standards</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:datumGueltigkeitAb>2020-03-16</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>reg.eintragungstyp</ShortName>
+      <LongName xml:lang="de-DE">REG.Eintragungstyp</LongName>
+      <Version>1.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:reg.eintragungstyp</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:reg.eintragungstyp_1.0</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="Schluessel" Use="required">
+         <ShortName>Schluessel</ShortName>
+         <LongName xml:lang="de-DE">Schluessel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Wert" Use="required">
+         <ShortName>Wert</ShortName>
+         <LongName xml:lang="de-DE">Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="SchluesselKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>SchluesselKey</ShortName>
+         <ColumnRef Ref="Schluessel"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Bedingtes Kapital</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Eintragungszusatz</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Firma/Name</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Freitext</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Genehmigtes Kapital</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Insolvenz</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>007</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Nachschusspflicht</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>008</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Rechtsform</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>009</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Satzung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>010</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Sitz/Ort der Niederlassung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>011</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Sonstige Rechtsverhältnisse</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>013</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gegenstand des Unternehmens</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>014</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Unternehmensvertrag</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>015</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Geschäftsanschrift</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>016</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Kapital</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>017</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Auflösungsvermerk</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>018</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Bemerkung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>019</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Formwechsel</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>020</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Haftungsbeschränkung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>021</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Nachgründung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>022</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Spaltung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>023</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Vermögensübertragung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>024</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Verschmelzung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>025</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Tag der ersten Eintragung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>026</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Dauer der Gesellschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>027</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Hauptniederlassung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>028</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Zweigniederlassung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>029</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Allgemeine Vertretungsregelung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>030</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Empfangsberechtigter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>031</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Vertretungsberechtigter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>032</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Prokurist</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>033</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Kommanditist</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>034</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Mitglied EWIV</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>035</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Freitext (vorangestellt)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>036</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Freitext (nachgestellt)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>037</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Besondere Vertretungsbefugnis</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>038</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Datum der Eintragung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>039</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Nebensitz</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>040</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Vertretungsregelung Prokurist</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>STRAF.Rechtsfolgen</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste enthält die verschiedenen Rechtsfolgen.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>AG-IT-Standards</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:datumGueltigkeitAb>2020-03-16</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>straf.rechtsfolgen</ShortName>
+      <LongName xml:lang="de-DE">STRAF.Rechtsfolgen</LongName>
+      <Version>2.1</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:straf.rechtsfolgen</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:straf.rechtsfolgen_2.1</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName xml:lang="de-DE">Schlüssel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="wert" Use="required">
+         <ShortName>wert</ShortName>
+         <LongName xml:lang="de-DE">Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Aberkennung des Wahl- und Stimmrechts</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Absehen von Strafe §60 StGB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Anordnung der Bekanntgabe der Verurteilung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Aussetzung der Verhängung der Jugendstrafe § 27 JGG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Berufsverbot</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Beschäftigungsverbot</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>007</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Bewährung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>008</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dauerarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>009</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einheitsjugendstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>011</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung nach AMG § 98 (Maßnahme nach)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>012</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung nach BtMG § 33 (Maßnahme nach)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>013</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung nach OWiG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>014</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung nach WaffG § 54 (Maßnahme nach)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>015</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Entziehung der Fahrerlaubnis</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>016</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erzwingungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>017</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrverbot §25 Abs. 2 StVG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>018</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrverbot §44 StGB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>019</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Freiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>020</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Freispruch</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>021</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Freizeitarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>022</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>023</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht kraft Gesetzes (§ 68 Abs. 2 StGB)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>024</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht nach (Vollverbüßung der) Freiheitstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>025</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht nach Aussetzung einer Unterbringung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>026</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht nach Aussetzung oder Erledigung einer Unterbringung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>027</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht nach Erledigung einer Unterbringung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>028</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gesamtfreiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>029</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gesamtstrafarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>030</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Isolierte Sperre</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>031</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Jugendarrest nach § 16a JGG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>032</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Jugendstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>033</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Kurzarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>034</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Lebenslange Freiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>035</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Lebenslange Freiheitsstrafe mit besonderer Schwere der Schuld</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>036</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Lebenslange Gesamtfreiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>037</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Mitteilung zum Gewerbezentralregister gemäß § 149 Abs. 2 Nr. 4 GewO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>038</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Nachträgliche einheitliche Maßnahme</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>039</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>nachträgliche Sicherungsverwahrung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>040</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ordnungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>041</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungsverwahrung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>042</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungsverwahrung angeordnet nach vorherigem Vorbehalt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>043</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sonstige strafrechtliche Maßnahme außerhalb StGB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>044</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sperrfrist für Wiedererteilung der Fahrerlaubnis</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>045</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Strafarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>046</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Strafvorbehalt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>047</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Tat aufgrund der Betäubungsmittelabhängigkeit §17 II BZRG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>048</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unbrauchbarmachung, Vernichtung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>049</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung § 63 StGB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>050</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung § 64 StGB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>051</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verbot der Ausbildung/Beschäftigung von Jugendlichen (§ 25 JArbSchG)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>052</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verbot der Jagdausübung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>053</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verbot der Tätigkeit als Geschäftsführer und Mitglied des Vorstands</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>055</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verlust der Amtsfähigkeit</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>056</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verlust der Amtsfähigkeit und Wählbarkeit kraft Gesetzes</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>057</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verlust der Wählbarkeit</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>058</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verlust des Stimmrechts</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>059</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verwarnung § 14 JGG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>060</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrverbot § 25 Abs. 4 StVG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>061</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vorbehaltene Sicherungsverwahrung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>062</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vorwegvollzug Maßregel</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>063</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Nichtanrechenbarkeit U-Haft aufgrund Urteil</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>064</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verzicht auf sichergestellte Gegenstände</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>065</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung (auch Erweiterte) von Taterträgen bei Tätern und Teilnehmern und anderen (§ 73, § 73a und § 73 b StGB)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>066</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung (auch Erweiterte) von Tatprodukten, Tatmitteln und Tatobjekten bei Tätern und Teilnehmern und anderen (§ 74, § 74a StGB)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>067</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungseinziehung (§ 74 b StGB)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>068</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung von Schriften und Unbrauchbarmachung (§ 74 d StGB)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>069</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einziehung Sonstige nach</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

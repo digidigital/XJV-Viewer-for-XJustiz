@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>STRAF.Auflagen</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste enthält die verschiedenen Auflagearten.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>AG-IT-Standards</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:datumGueltigkeitAb>2020-03-16</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>straf.auflagen</ShortName>
+      <LongName xml:lang="de-DE">STRAF.Auflagen</LongName>
+      <Version>2.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:straf.auflagen</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:straf.auflagen_2.0</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName xml:lang="de-DE">Schlüssel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="wert" Use="required">
+         <ShortName>wert</ShortName>
+         <LongName xml:lang="de-DE">Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Arbeitsleistung als Auflage (§ 15 JGG)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Arbeitsstunden (§15 JGG)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Entschuldigung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Schadenswiedergutmachung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Geldauflage</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige gemeinützige Leistungen (§56b StGB)</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

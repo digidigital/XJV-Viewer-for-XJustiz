@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl="http://xoev.de/schemata/genericode/1_0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://docs.oasis-open.org/codelist/ns/genericode/1.0/ http://docs.oasis-open.org/codelist/cs-genericode-1.0/xsd/genericode.xsd http://xoev.de/schemata/genericode/1_0 http://xoev.de/schemata/genericode/1_0/xoev-cl-attributes.xsd">
+   <Annotation>
+      <Description>
+         <xoev-cl:beschreibung>Beschreibt die im Handels-, Genossenschafts-, Partnerschafts- und Vereinsregister einzutragenden allgemeinen Vertretungsregelung.</xoev-cl:beschreibung>
+         <xoev-cl:datumgueltigkeitab>2016-12-31</xoev-cl:datumgueltigkeitab>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>REG.Allgemeine_Vertretungsregelung</ShortName>
+      <LongName xml:lang="en">REG.Allgemeine_Vertretungsregelung</LongName>
+      <Version>2.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:reg.allgemeine-vertretungsregelung</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:reg.allgemeine-vertretungsregelung_2.0</CanonicalVersionUri>
+      <Agency>
+         <ShortName xml:lang="de">AG-IT-Standards</ShortName>
+         <LongName xml:lang="de">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="Schluessel" Use="required">
+         <ShortName>Schluessel</ShortName>
+         <LongName>Schluessel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Wert" Use="required">
+         <ShortName>Wert</ShortName>
+         <LongName>Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl:xoev-code/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="Schluessel"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Der Verein wird durch den Liquidator vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Der Verein wird durch den/die Liquidator/en vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Der Verein wird durch die Liquidatoren vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Der Verein wird durch die Liquidatoren vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Der/Die Inhaber(in) handelt in Gesamthandsgemeinschaft.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Abwickler vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>007</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch den Liquidator vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>008</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch den/die Liquidator/en vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>009</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch die Liquidatoren vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>010</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch zwei Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>011</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch zwei Liquidatoren oder durch einen Liquidator gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>012</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch zwei Vorstandsmitglieder gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>013</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch zwei Vorstandsmitglieder oder durch ein Vorstandsmitglied gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>014</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Genossenschaft wird durch zwei Vorstandsmitglieder, darunter der Vorsitzende oder dessen Stellvertreter, vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>015</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die geschäftsführenden Direktoren vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>016</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Geschäftsführer vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>017</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch den Abwickler vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>018</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch den Liquidator vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>019</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch den/die Abwickler vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>020</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch den/die Liquidator/en vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>021</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch die Abwickler vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>022</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch die Liquidatoren vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>023</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Abwickler gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>024</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Abwickler oder durch einen Abwickler gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>025</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei geschäftsführende Direktoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>026</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei geschäftsführende Direktoren oder durch einen geschäftsführenden Direktor gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>027</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Geschäftsführer gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>028</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Geschäftsführer oder durch einen Geschäftsführer gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>029</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>030</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Liquidatoren oder durch einen Liquidator gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>031</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Mitglieder des Leitungsorgans gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>032</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Mitglieder des Leitungsorgans oder durch ein Mitglied des Leitungsorgans gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>033</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei persönlich haftende Gesellschafter gemeinsam oder durch einen persönlich haftenden Gesellschafter gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>034</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Vorstandsmitglieder gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>035</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Gesellschaft wird durch zwei Vorstandsmitglieder oder durch ein Vorstandsmitglied gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>036</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Liquidatoren vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>037</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Mitglieder des Leitungsorgans vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>038</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Partner vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>039</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Partnerschaft wird durch den Liquidator vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>040</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Partnerschaft wird durch den/die Liquidator/en vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>041</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Partnerschaft wird durch die Liquidatoren vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>042</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Partnerschaft wird durch zwei Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>043</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die persönlich haftenden Gesellschafter vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>044</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vereinigung wird durch den Abwickler vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>045</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vereinigung wird durch den/die Abwickler vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>046</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vereinigung wird durch die Abwickler vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>047</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vereinigung wird durch zwei Abwickler gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>048</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vereinigung wird durch zwei Abwickler oder durch einen Abwickler gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>049</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vereinigung wird durch zwei Geschäftsführer gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>050</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vereinigung wird durch zwei Geschäftsführer oder durch einen Geschäftsführer gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>051</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vorstandsmitglieder vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>052</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Die Vorstandsmitglieder vertreten mehrheitlich.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>053</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist ein Liquidator bestellt vertritt er allein. Sind mehrere Liquidatoren bestellt, vertreten jeweils zwei Liquidatoren den Verein gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>054</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist ein Liquidator bestellt, vertritt er allein. Sind mehrere Liquidatoren bestellt, vertreten diese den Verein gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>055</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Abwickler bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Abwickler bestellt, so wird die Gesellschaft durch die Abwickler gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>056</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Abwickler bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Abwickler bestellt, so wird die Gesellschaft durch zwei Abwickler gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>057</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Abwickler bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Abwickler bestellt, so wird die Gesellschaft durch zwei Abwickler oder durch einen Abwickler gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>058</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Abwickler bestellt, so vertritt er die Vereinigung allein. Sind mehrere Abwickler bestellt, so wird die Vereinigung durch die Abwickler gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>059</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Abwickler bestellt, so vertritt er die Vereinigung allein. Sind mehrere Abwickler bestellt, so wird die Vereinigung durch zwei Abwickler gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>060</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Abwickler bestellt, so vertritt er die Vereinigung allein. Sind mehrere Abwickler bestellt, so wird die Vereinigung durch zwei Abwickler oder durch einen Abwickler gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>061</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein geschäftsführender Direktor bestellt, so vertritt er allein. Sind mehrere geschäftsführende Direktoren bestellt, vertreten zwei gemeinsam oder ein geschäftsführender Direktor mit einem Prokuristen.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>062</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein geschäftsführender Direktor bestellt, so vertritt er die Gesellschaft allein. Sind mehrere geschäftsführende Direktoren bestellt, so wird die Gesellschaft durch die geschäftsführenden Direktoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>063</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein geschäftsführender Direktor bestellt, so vertritt er die Gesellschaft allein. Sind mehrere geschäftsführende Direktoren bestellt, so wird die Gesellschaft durch zwei geschäftsführende Direktoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>064</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Geschäftsführer bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Geschäftsführer bestellt, so wird die Gesellschaft durch die Geschäftsführer gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>065</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Geschäftsführer bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Geschäftsführer bestellt, so wird die Gesellschaft durch zwei Geschäftsführer gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>066</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Geschäftsführer bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Geschäftsführer bestellt, so wird die Gesellschaft durch zwei Geschäftsführer oder durch einen Geschäftsführer gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>067</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Geschäftsführer bestellt, so vertritt er die Vereinigung allein. Sind mehrere Geschäftsführer bestellt, so wird die Vereinigung durch die Geschäftsführer gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>068</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Geschäftsführer bestellt, so vertritt er die Vereinigung allein. Sind mehrere Geschäftsführer bestellt, so wird die Vereinigung durch zwei Geschäftsführer gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>069</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Geschäftsführer bestellt, so vertritt er die Vereinigung allein. Sind mehrere Geschäftsführer bestellt, so wird die Vereinigung durch zwei Geschäftsführer oder durch einen Geschäftsführer gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>070</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Genossenschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Genossenschaft durch die Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>071</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Genossenschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Genossenschaft durch zwei Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>072</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Genossenschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Genossenschaft durch zwei Liquidatoren oder durch einen Liquidator gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>073</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Gesellschaft durch die Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>074</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Gesellschaft durch zwei Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>075</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Gesellschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Gesellschaft durch zwei Liquidatoren oder durch einen Liquidator gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>076</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Partnerschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Partnerschaft durch die Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>077</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Liquidator bestellt, so vertritt er die Partnerschaft allein. Sind mehrere Liquidatoren bestellt, so wird die Partnerschaft durch zwei Liquidatoren gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>078</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Mitglied des Leitungsorgans bestellt, so vertritt es die Gesellschaft allein. Sind mehrere Mitglieder des Leitungsorgans bestellt, so wird die Gesellschaft durch die Mitglieder des Leitungsorgans gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>079</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Mitglied des Leitungsorgans bestellt, so vertritt es die Gesellschaft allein. Sind mehrere Mitglieder des Leitungsorgans bestellt, so wird die Gesellschaft durch zwei Mitglieder des Leitungsorgans gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>080</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Mitglied des Leitungsorgans bestellt, so vertritt es die Gesellschaft allein. Sind mehrere Mitglieder des Leitungsorgans bestellt, so wird die Gesellschaft durch zwei von ihnen oder durch einen gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>081</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Vorstandsmitglied bestellt, so vertritt es die Gesellschaft allein. Sind mehrere Vorstandsmitglieder bestellt, so wird die Gesellschaft durch die Vorstandsmitglieder gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>082</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Vorstandsmitglied bestellt, so vertritt es die Gesellschaft allein. Sind mehrere Vorstandsmitglieder bestellt, so wird die Gesellschaft durch zwei Vorstandsmitglieder gemeinsam vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>083</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Ist nur ein Vorstandsmitglied bestellt, so vertritt es die Gesellschaft allein. Sind mehrere Vorstandsmitglieder bestellt, so wird die Gesellschaft durch zwei Vorstandsmitglieder oder durch ein Vorstandsmitglied gemeinsam mit einem Prokuristen vertreten.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>084</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeder Abwickler vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>085</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeder geschäftsführende Direktor vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>086</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeder Geschäftsführer vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>087</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeder Liquidator vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>088</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeder Partner vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>089</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeder persönlich haftende Gesellschafter vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>090</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jedes Mitglied des Leitungsorgans vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>091</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jedes Vorstandsmitglied vertritt einzeln.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>092</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeweils zwei Liquidatoren vertreten den Verein gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>093</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeweils zwei Partner vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>094</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeweils zwei persönlich haftende Gesellschafter vertreten gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>095</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Jeweils zwei Vorstandsmitglieder vertreten den Verein gemeinsam.</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

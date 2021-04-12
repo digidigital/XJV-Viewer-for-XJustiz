@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-2="http://xoev.de/schemata/genericode/2"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-2:nameKurz>REG.Sachliche_Erweiterung_Prokura</xoev-cl-2:nameKurz>
+         <xoev-cl-2:beschreibung-codeliste>Beschreibt die im Handels-, Genossenschafts- und Partnerschaftsregister einzutragenden Erweiterungen von Prokuren.</xoev-cl-2:beschreibung-codeliste>
+         <xoev-cl-2:herausgebernameKurz>AG-IT-Standards</xoev-cl-2:herausgebernameKurz>
+         <xoev-cl-2:datumGueltigkeitAb>2016-12-31</xoev-cl-2:datumGueltigkeitAb>
+         <xoev-cl-2:versionXOEVHandbuch>2.1</xoev-cl-2:versionXOEVHandbuch>
+         <xoev-cl-2:aenderungZurVorversion>keine</xoev-cl-2:aenderungZurVorversion>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>REG.Sachliche-Erweiterung-Prokura</ShortName>
+      <LongName xml:lang="en">REG.Sachliche_Erweiterung_Prokura</LongName>
+      <Version>2.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:reg.sachliche-erweiterung-prokura</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:reg.sachliche-erweiterung-prokura_2.0</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="Schluessel" Use="required">
+         <ShortName>Schluessel</ShortName>
+         <LongName>Schluessel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Wert" Use="required">
+         <ShortName>Wert</ShortName>
+         <LongName>Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-2:xoev-code/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="Schluessel"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Belastung von Grundstücken</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Veräußerung und Belastung von Grundstücken</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Veräußerung von Grundstücken</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

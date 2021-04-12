@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl="http://xoev.de/schemata/genericode/1_0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://docs.oasis-open.org/codelist/ns/genericode/1.0/ http://docs.oasis-open.org/codelist/cs-genericode-1.0/xsd/genericode.xsd http://xoev.de/schemata/genericode/1_0 http://xoev.de/schemata/genericode/1_0/xoev-cl-attributes.xsd">
+   <Annotation>
+      <Description>
+         <xoev-cl:beschreibung>Beschreibt die im Handels-, Genossenschafts-, Partnerschafts- und Vereinsregister einzutragenden besonderen Vertretungsregelung des jeweiligen Vertreters.</xoev-cl:beschreibung>
+         <xoev-cl:datumgueltigkeitab>2016-12-31</xoev-cl:datumgueltigkeitab>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>REG.Besondere_Vertretungsregelung</ShortName>
+      <LongName xml:lang="en">REG.Besondere_Vertretungsregelung</LongName>
+      <Version>2.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:reg.besondere-vertretungsregelung</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:reg.besondere-vertretungsregelung_2.0</CanonicalVersionUri>
+      <Agency>
+         <ShortName xml:lang="de">AG-IT-Standards</ShortName>
+         <LongName xml:lang="de">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="Schluessel" Use="required">
+         <ShortName>Schluessel</ShortName>
+         <LongName>Schluessel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Wert" Use="required">
+         <ShortName>Wert</ShortName>
+         <LongName>Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl:xoev-code/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="Schluessel"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Der Partner ist von der Vertretung ausgeschlossen.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Einzelprokura</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>einzelvertretungsberechtigt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit dem Vorsitzenden oder dessen Stellvertreter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Abwickler</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Abwickler oder einem anderen Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>007</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem anderen Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>008</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem geschäftsführenden Direktor</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>009</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem geschäftsführenden Direktor oder einem anderen Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>010</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Geschäftsführer</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>011</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Geschäftsführer</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>012</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Liquidator</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>013</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Liquidator oder einem anderen Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>014</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Mitglied des Leitungsorgans</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>015</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Mitglied des Leitungsorgans oder einem anderen Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>016</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem persönlich haftenden Gesellschafter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>017</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem persönlich haftenden Gesellschafter oder einem anderen Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>018</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Vorstandsmitglied</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>019</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>Gesamtprokura gemeinsam mit einem Vorstandsmitglied oder einem anderen Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>020</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Abwickler</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>021</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Abwickler oder einem Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>022</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen geschäftsführenden Direktor</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>023</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen geschäftsführenden Direktor oder einem Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>024</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Geschäftsführer</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>025</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Geschäftsführer oder einem Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>026</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Liquidator</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>027</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Liquidator oder einem Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>028</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Mitglied des Leitungsorgans</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>029</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Mitglied des Leitungsorgans oder einem Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>030</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Partner</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>031</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen persönlich haftenden Gesellschafter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>032</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen persönlich haftenden Gesellschafter oder einem Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>033</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Vorstandsmitglied</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>034</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>vertretungsberechtigt gemeinsam mit einem anderen Vorstandsmitglied oder einem Prokuristen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Schluessel">
+            <SimpleValue>035</SimpleValue>
+         </Value>
+         <Value ColumnRef="Wert">
+            <SimpleValue>von der Vertretung ausgeschlossen</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

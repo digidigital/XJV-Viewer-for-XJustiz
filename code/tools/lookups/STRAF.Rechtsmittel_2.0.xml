@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>STRAF.Rechtsmittel</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste enthält die verschiedenen Rechtsmittel.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>AG-IT-Standards</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:datumGueltigkeitAb>2020-03-16</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>straf.rechtsmittel</ShortName>
+      <LongName xml:lang="de-DE">STRAF.Rechtsmittel</LongName>
+      <Version>2.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:straf.rechtsmittel</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:straf.rechtsmittel_2.0</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName xml:lang="de-DE">Schlüssel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="wert" Use="required">
+         <ShortName>wert</ShortName>
+         <LongName xml:lang="de-DE">Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Beschwerde</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sofortige Beschwerde</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Revision</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Revision Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Revision Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Revision Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>007</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Berufung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>008</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Berufung Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>009</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Berufung Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>010</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Berufung Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>011</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>beschränkte Berufung Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>012</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsmittel</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>013</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsmittel Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>014</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsmittel Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>015</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsmittel Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>016</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Anhörungsrüge</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>017</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Anhörungsrüge Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>018</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Anhörungsrüge Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>019</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Anhörungsrüge Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>020</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Antrag auf Entscheidung des Rechtsbeschwerdegerichts</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>021</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Antrag auf Entscheidung des Rechtsbeschwerdegerichts Betroffener</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>022</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Antrag auf Entscheidung des Rechtsbeschwerdegerichts Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>023</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Antrag auf Zulassung der Rechtsbeschwerde</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>024</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Antrag auf Zulassung der Rechtsbeschwerde</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>025</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Antrag auf Zulassung der Rechtsbeschwerde Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>026</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gegenvorstellung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>027</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erneute Gegenvorstellung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>028</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einspruch des Angeklagten gegen Strafbefehl</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>029</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>beschränkter Einspruch des Angeklagten gegen Strafbefehl</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>030</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erinnerung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>031</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erinnerung Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>032</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erinnerung Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>033</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsbeschwerde</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>034</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsbeschwerde Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>035</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsbeschwerde Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>036</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsbeschwerde Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>037</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sprungrevision</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>038</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sprungrevision Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>039</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sprungrevision Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>040</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sprungrevision Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>041</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Wiedereinsetzung in den vorherigen Stand</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>042</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Wiedereinsetzung in den vorherigen Stand Angeklagter</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>043</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Wiedereinsetzung in den vorherigen Stand Nebenkläger</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

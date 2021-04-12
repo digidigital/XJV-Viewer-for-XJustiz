@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>STRAF.Haftart</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste enthält die verschiedenen Haftarten.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>AG-IT-Standards</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:datumGueltigkeitAb>2020-03-16</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>straf.haftart</ShortName>
+      <LongName xml:lang="de-DE">STRAF.Haftart</LongName>
+      <Version>2.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:straf.haftart</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:straf.haftart_2.0</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName xml:lang="de-DE">Schlüssel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="wert" Use="required">
+         <ShortName>wert</ShortName>
+         <LongName xml:lang="de-DE">Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Abschiebungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Abschiebungshaft mit Fix-Ende</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Arrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Auslieferungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ausnüchterung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Beugehaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>007</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dauerarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>008</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Durchlieferungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>009</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einheits-Jugendstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>010</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ersatzfreiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>011</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erzwingungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>012</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erzwingungshaft (Fest-Betrag)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>013</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Erzwingungshaft (Zivilhaft)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>014</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Freiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>015</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Freiheitsstrafe nach § 114 JGG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>016</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Freiheitsstrafe o. Unterlagen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>017</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Freizeitarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>018</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>FS Lebenslang</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>019</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>FS Lebenslang ( GESAMTSTRAFE )</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>020</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gesamt-Ersatzfreiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>021</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gesamt-Strafarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>022</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gesamtfreiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>023</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Hauptverhandl.H. § 127b,2 StPO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>024</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Jugendarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>025</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Jugendstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>026</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Jugendstrafe nach § 92 JGG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>027</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Jugendstrafe ohne Unterlagen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>028</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Kurzarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>029</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ordnungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>030</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ordnungshaft (Zivilhaft)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>031</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Organisationshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>032</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Einheits-Jugendstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>033</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Ersatzfreiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>034</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Freiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>035</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Freiheitsstrafe (abstrakt)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>036</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Gesamt-Ersatzfreiheitsst.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>037</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Gesamt-Freiheitsstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>038</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Jugendstrafe</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>039</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Lebenslang</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>040</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rest-Sicherungsverwahrung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>041</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Schuldhaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>042</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungshaft (Jugendliche)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>043</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungshaft (SV)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>044</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungshaft (Zivilhaft)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>045</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungshaft § 453c StPO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>046</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungshaft §453c StPO (LL)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>047</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungsverwahrung I.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>048</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungsverwahrung I., unb.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>049</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sicherungsverwahrung II.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>050</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Strafarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>051</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Überhaft - befristet</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>052</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Überhaftnotierung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>053</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ungehorsamsarrest</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>054</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ungehorsamshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>055</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ungehorsamshaft (§ 230 StPO)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>056</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>057</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung (§275a StPO) SV</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>058</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung (Entz.) m. Ber.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>059</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung (Entz.) o. Ber.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>060</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung (Psych.) m. Ber.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>061</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung (Psych.) o. Ber.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>062</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Unterbringung, einstw. o. Ber.</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>063</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Untersuchungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>064</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Untersuchungshaft (junge Gef.)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>065</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vorläufige Auslieferungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>066</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vorläufige Festnahme</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>067</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vorläufige Unterbringung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>068</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Zivilhaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>069</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Zivilhaft (mit Tagessatz)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>070</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Zurückweisungshaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>071</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Zwangshaft (Zivilhaft)</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

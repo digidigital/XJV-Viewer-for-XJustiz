@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>STRAF.Sachgebietsschluessel</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste ist vorgesehen für das Element Aktenzeichen/Sachgebietsschlüssel</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>AG-IT-Standards</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:datumGueltigkeitAb>2020-03-16</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>straf.sachgebietsschluessel</ShortName>
+      <LongName xml:lang="de-DE">STRAF.Sachgebietsschluessel</LongName>
+      <Version>2.1</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:straf.sachgebietsschluessel</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:straf.sachgebietsschluessel_2.1</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName xml:lang="de-DE">Schlüssel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="wert" Use="required">
+         <ShortName>wert</ShortName>
+         <LongName xml:lang="de-DE">Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>10</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Staatsschutzsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>11</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>politische Strafsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>12</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vergehen nach § 131 StGB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>13</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige Ermittlungsverfahren bei der GenStA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>15</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Straftaten gegen die sexuelle Selbstbestimmung (nicht SG 20)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>16</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verbreitung pornografischer Schriften</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>20</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Kapitalverbrechen (nicht SG 52,53)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>21</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>vorsätzl. Körperverletzung (nicht SG 20,51,53,90)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>25</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Diebstahl und Unterschlagung (nicht SG 51)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>26</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Betrug und Untreue (nicht SG 40,41,51)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>35</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>schwere Verkehrsstrafsachen (ohne § 315c Ia StGB)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>36</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige Verkehrsstrafsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>40</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Wirtschaftsstrafsachen im Sinne des § 74c GVG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>41</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige Wirtschaftsstrafsachen (nicht SG 44)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>42</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Steuerstrafsachen (nicht SG 40)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>43</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Geldwäschedelikte</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>44</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Straft.g. § 74c I GVG, nicht gewerbsm. im Internet (nicht SG 40)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>45</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Umweltschutzstrafsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>50</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Korruptionsdelikte (nicht SG 40,41)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>51</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren gegen Justizbedienstete (ohne Korruption; nicht SG 40,41)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>52</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>vors. Tötungsdelikte durch Polizeibedienstete</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>53</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gewaltausübung + Aussetzung d. Polizeibedienstete</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>54</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Zwang + Missbrauch des Amtes d. Polizeibedienstete</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>55</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einschleusung von Ausländern</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>56</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonst. Straftaten nach dem AufenthG, AsylG und FreizügG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>60</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Straftaten nach dem BtMG(Freiheitsstrafe =&gt;1 Jahr)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>61</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige Straftaten nach dem BtMG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>65</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ärztesachen und Straftaten nach dem HeilprG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>66</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Pressestrafsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>90</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>allgemeine Strafsachen (Freiheitsstrafe =&gt; 1 Jahr)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>98</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren gegen Strafunmündige</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>99</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige allgemeine Straftaten</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>200</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige UJs-Verfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>201</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Leichensachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>202</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Kapitalsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>203</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Brandsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>204</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>politische Verfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>210</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren nach dem OWiG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>211</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verkehrsordnungswidrigkeiten</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>220</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gnadensachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>230</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige AR-Verfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>231</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Mitteilungen nach § 47 V AktO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>232</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren bei Immunität</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>234</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtshilfeersuchen in das Ausland</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>235</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtshilfeersuchen aus dem Ausland</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>236</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Amtshilfe für eine andere Staatsanwaltschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>237</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einlieferungsersuchen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>240</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Zivilsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>250</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren nach dem Strafentschädigungsgesetz</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>500</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Revisionen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>510</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtsbeschwerden</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>520</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Antrag auf Zulassung der Rechtsbeschwerde</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>530</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Beschwerden</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>531</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rehabilitierungsverfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>550</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Haftprüfungsverfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>560</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Einlieferungsersuchen - E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>561</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Auslieferungs-/Überstellungsersuchen - A, Ü -</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>562</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Durchlieferungsersuchen - D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>580</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren nach der BRAO (erstinstanzlich)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>581</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren nach der BRAO (zweitinstanzlich)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>582</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren nach der PatAnwO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>583</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren nach der BNotO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>584</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren nach dem Steuerberatergesetz</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>590</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Disziplinarverfahren gegen Richter und Beamte</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>600</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Entsch. in Vorverfahren und sonstige Verfahren gem §§ 23 ff EGGVG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>610</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Staats- und Amtshaftungsverfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>611</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Schadenersatz- und Regressangelegenheiten</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>620</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Angelegenheiten nach dem NATO-Truppenstatut</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>630</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtshilfeersuchen in das Ausland - S</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>631</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtshilfeersuchen aus dem Ausland - S</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>640</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Kartellbußgeldsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>650</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Berichtssachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>660</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Ausschlussverfahren nach § 138 a StPO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>670</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Gerichtsstandbestimmungen in Straf- u. Auslieferungssachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>690</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Zivilsachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>700</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Revisionen in Privatklagesachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>710</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>711</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht intern</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>712</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Führungsaufsicht extern</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>713</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vorbereitung der Führungsaufsicht - intern</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>714</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Vorbereitung der Führungsaufsicht - extern</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>730</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Persönliche Dienstaufsichtsbeschwerde</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>999</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>sonstige Verfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>A1</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Rechtshilfesachen einschließlich Auslieferungssachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>A2</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verfahren zur DNA - Identitätsfeststellung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>A3</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sonstige AR-Register-Sachen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>O1</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Sonstige OWi-Sache</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>O2</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Verkehrs-OWi-Sache</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>U1</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>UJs-Sachen: Leichen-, Kapital-, Brandsachen und politische Verfahren</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>U2</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>UJs-Sachen: Sonstige UJs-Verfahren</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

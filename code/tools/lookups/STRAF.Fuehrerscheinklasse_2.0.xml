@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>STRAF.Fuehrerscheinklasse</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Diese Codeliste ist vorgesehen für das Element Personendaten/Fuehrerschein/Fuehrerscheinklasse.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>AG-IT-Standards</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:datumGueltigkeitAb>2020-03-16</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>straf.fuehrerscheinklasse</ShortName>
+      <LongName xml:lang="de-DE">STRAF.Fuehrerscheinklasse</LongName>
+      <Version>2.0</Version>
+      <CanonicalUri>urn:xoev-de:xjustiz:codeliste:straf.fuehrerscheinklasse</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:xjustiz:codeliste:straf.fuehrerscheinklasse_2.0</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">BLK-AG IT-Standards in der Justiz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName xml:lang="de-DE">Schlüssel</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="wert" Use="required">
+         <ShortName>wert</ShortName>
+         <LongName xml:lang="de-DE">Wert</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>001</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>002</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>1a</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>003</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>1b</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>004</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>005</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>006</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>4</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>007</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>5</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>008</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>009</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>A1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>010</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>A2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>011</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Allgemeine Fahrerlaubnis (§ 5 StVZO) Klasse 1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>012</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Allgemeine Fahrerlaubnis (§ 5 StVZO) Klasse 1a</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>013</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Allgemeine Fahrerlaubnis (§ 5 StVZO) Klasse 1b</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>014</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Allgemeine Fahrerlaubnis (§ 5 StVZO) Klasse 2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>015</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Allgemeine Fahrerlaubnis (§ 5 StVZO) Klasse 3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>016</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Allgemeine Fahrerlaubnis (§ 5 StVZO) Klasse 4</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>017</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Allgemeine Fahrerlaubnis (§ 5 StVZO) Klasse 5</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>018</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>AY</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>019</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>B</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>020</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>021</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>C</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>022</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>C1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>023</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>C1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>024</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>C75</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>025</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>C75E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>026</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>CE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>027</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>028</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>D1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>029</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>D1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>030</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>031</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>032</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse A1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>033</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse B</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>034</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>035</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse C</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>036</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse C1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>037</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse C1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>038</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse CE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>039</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>040</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse D1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>041</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse D1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>042</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>043</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse L</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>044</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse M</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>045</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Deutsche allgemeine Fahrerlaubnis nach der FeV (§ 6 FeV in Verbindung mit 91/439/EWG Klasse T</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>046</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>047</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse A1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>048</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse AY</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>049</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse B</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>050</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>051</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse C</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>052</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse C1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>053</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse C1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>054</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse CE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>055</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>056</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse D1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>057</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse D1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>058</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>059</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse F</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>060</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse G</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>061</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse GE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>062</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse L</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>063</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse M</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>064</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse P</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>065</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (§ 14 StVZO, §6, §26 FeV) Klasse T</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>066</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Alt) Klasse 1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>067</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Alt) Klasse 1a</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>068</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Alt) Klasse 1b</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>069</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Alt) Klasse 2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>070</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Alt) Klasse 3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>071</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Alt) Klasse 4</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>072</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse 4</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>073</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse 5</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>074</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>075</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse A1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>076</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse A2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>077</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse B</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>078</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse C</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>079</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse C75</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>080</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse C75E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>081</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>082</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>083</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (bisheriger § 5 i. V. m. § 14 StVZO) Klasse F</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>084</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>085</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse A1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>086</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse B</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>087</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>088</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse C</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>089</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse C1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>090</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse C1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>091</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>092</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse D1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>093</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse D1E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>094</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>095</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse L</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>096</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse M</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>097</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Dienstfahrerlaubnis der Bundeswehr (Neu) Klasse T</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>098</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>E</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>099</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>F</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>100</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse 1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>101</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse 2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>102</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse 3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>103</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse 4</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>104</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse 5</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>105</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>106</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse B</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>107</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>108</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse C</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>109</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse CE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>110</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse D</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>111</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>112</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse M</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>113</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis der ehemaligen DDR (§ 4 StVZO der DDR) Klasse T</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>114</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis zur Fahrgastbeförderung (§ 15d ff StVZO, § 48 FeV)</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>115</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis zur Fahrgastbeförderung (§ 15d ff StVZO, § 48 FeV) Krankenkraftwagen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>116</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis zur Fahrgastbeförderung (§ 15d ff StVZO, § 48 FeV) Mietwagen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>117</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis zur Fahrgastbeförderung (§ 15d ff StVZO, § 48 FeV) Personenkraftwagen im Linienverkehr</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>118</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis zur Fahrgastbeförderung (§ 15d ff StVZO, § 48 FeV) Personenkraftwagen mit dem gewerbsmäßig Ausflugsfahrten durchgeführt werden</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>119</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis zur Fahrgastbeförderung (§ 15d ff StVZO, § 48 FeV) Personenkraftwagen, mit dem Ferienziel-Reisen durchgeführt werden</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>120</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrerlaubnis zur Fahrgastbeförderung (§ 15d ff StVZO, § 48 FeV) Taxi</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>121</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für die allgemeine Fahrerlaubnis (§ 1 FahrlG, § 5 StVZO) Klasse 1</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>122</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für die allgemeine Fahrerlaubnis (§ 1 FahrlG, § 5 StVZO) Klasse 2</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>123</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für die allgemeine Fahrerlaubnis (§ 1 FahrlG, § 5 StVZO) Klasse 3</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>124</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis der Bundeswehr Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>125</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis der Bundeswehr Klasse BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>126</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis der Bundeswehr Klasse CE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>127</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis der Bundeswehr Klasse DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>128</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis der Bundeswehr Sonstige Dienstfahrlehrerlaubnisklasse</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>129</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>130</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis Klasse BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>131</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis Klasse CE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>132</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis für eine Dienstfahrerlaubnis Klasse DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>133</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis nach der 2. Führerscheinrichtlinie (91/439/EWG) Klasse A</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>134</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis nach der 2. Führerscheinrichtlinie (91/439/EWG) Klasse BE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>135</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis nach der 2. Führerscheinrichtlinie (91/439/EWG) Klasse CE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>136</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Fahrlehrererlaubnis nach der 2. Führerscheinrichtlinie (91/439/EWG) Klasse DE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>137</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>G</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>138</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>GE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>139</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Internationaler / Ausländischer Führerschein (§ 4, § 8, § 9 IntKfzVO) die Angabe einzelner Klassen ist nicht erforderlich</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>140</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Keine Angaben zur Fahrerlaubnis</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>141</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>L</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>142</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>M</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>143</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>Nicht im Besitz einer Fahrerlaubnis</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>144</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>P</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>145</SimpleValue>
+         </Value>
+         <Value ColumnRef="wert">
+            <SimpleValue>T</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>
