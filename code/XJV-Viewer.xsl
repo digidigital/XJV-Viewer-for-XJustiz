@@ -125,7 +125,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
          <head>
             <meta charset="UTF-8" />
             <script>
-               <xsl:text disable-output-escaping="yes"><![CDATA[function toggleVisibility(button) {
+               <xsl:text disable-output-escaping="yes"><![CDATA[
+function toggleVisibility(button) {
 	var foldableDIV = button.closest('.akte').querySelector('.foldable');
 	var property = foldableDIV.style.display;
 	if (property == 'none' || property == '') {
@@ -307,6 +308,7 @@ document.addEventListener('readystatechange', function() {
 
 ;]]></xsl:text>
             </script>
+		 
             <style>/*------------------   Layout ----------------- */
 .container {
     display        : flex;
