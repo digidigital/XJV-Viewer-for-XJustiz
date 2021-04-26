@@ -1566,16 +1566,24 @@ th[scope=row] {
       </div>
    </xsl:template>
    
-<xsl:template match="tns:dateiname | tns:dateiname_der_Bezugsdatei">
-      <div class="dateilink">
-         <a class="datei">
-            <xsl:attribute name="href">
-               <xsl:value-of select="normalize-space(./text())" />
-            </xsl:attribute>
-            <xsl:attribute name="target">preview</xsl:attribute>
-            <xsl:value-of select="substring-after(normalize-space(./text()), '_')" />
-         </a>
-      </div>
+   <xsl:template match="tns:dateiname | tns:dateiname_der_Bezugsdatei">
+       <div class="dateilink">
+           <a class="datei">
+               <xsl:attribute name="href">
+                   <xsl:value-of select="normalize-space(./text())" />
+               </xsl:attribute>
+               <xsl:attribute name="target">preview</xsl:attribute>
+               <!-- Standard fordert Notation UUID_Dateiname.Endung, aber nicht alle Datensaetze sind konform - leere Linktexte vermeiden -->
+               <xsl:choose>
+                   <xsl:when test="contains(./text(), '_') = 'true'">
+                       <xsl:value-of select="substring-after(normalize-space(./text()), '_')" />
+                   </xsl:when>
+                   <xsl:otherwise>
+                       <xsl:value-of select="normalize-space(./text())" />
+                   </xsl:otherwise>
+               </xsl:choose>
+           </a>
+       </div>
    </xsl:template>
    
 <xsl:template match="tns:dokumententyp">
