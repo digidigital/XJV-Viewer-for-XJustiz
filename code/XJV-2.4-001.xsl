@@ -40,7 +40,11 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 -->
-   <!-- Bereitstellung von Codelisten und Suchtemplates -->
+
+<!--Dateipfad - Ggf. nach String suchen und ersetzen, bevor Stylesheet auf XML angewendet wird-->
+<xsl:param name="dateipfad">./</xsl:param>
+
+<!-- Bereitstellung von Codelisten und Suchtemplates -->
 
 <xsl:variable name="cl_allgemein" select="document('./tools/lookups/xjustiz_0010_cl_allgemein_3_3.xsd')" />  
 <xsl:template name="cl_allgemein">
@@ -1086,53 +1090,86 @@ th[scope=row] {
 </xsl:template>
    
 <xsl:template match="tns:rolle">
-      <details>
-         <summary>
-            <xsl:call-template name="cl_rollenbezeichnung">
-               <xsl:with-param name="liste" select="'Code.GDS.Rollenbezeichnung'" />
-               <xsl:with-param name="code" select="normalize-space(./tns:rollenbezeichnung)" />
-            </xsl:call-template>&#160;      
-            <xsl:value-of select="./tns:nr" />
-         </summary>
-         <div class="rolle">
-            Rollen-ID:&#160;<xsl:value-of select="./tns:rollenID/tns:id" />
-            <br />
-            Rollen-ID Instanznummer:&#160;<xsl:value-of select="./tns:rollenID/tns:ref.instanznummer" />
-            <br />
-            Geschäftszeichen:&#160;<xsl:value-of select="./tns:geschaeftszeichen" />
-            <br />
-            Bezeichnung:&#160;<xsl:value-of select="./tns:naehereBezeichnung" />
-            <br />
-            Anrede:&#160;<xsl:value-of select="./tns:anrede" />
-            <br />
-            Dienstbezeichnung:&#160;<xsl:value-of select="./tns:dienstbezeichnung" />
-            <br />
-            Funktionsbezeichnung:&#160;<xsl:value-of select="./tns:funktionsbezeichnung" />
-            <br />
-            <!--Implementieren-->
-            Bezug zu:&#160;<xsl:apply-templates select="./tns:referenz" />
-         </div>
-      </details>
-   </xsl:template>
-   
+   <details>
+      <summary>
+         <xsl:call-template name="cl_rollenbezeichnung">
+            <xsl:with-param name="liste" select="'Code.GDS.Rollenbezeichnung'" />
+            <xsl:with-param name="code" select="normalize-space(./tns:rollenbezeichnung)" />
+         </xsl:call-template>&#160;      
+         <xsl:value-of select="./tns:nr" />
+      </summary>
+      <div class="rolle">
+         <xsl:apply-templates select="./tns:rollenID" />
+         <xsl:apply-templates select="./tns:geschaeftszeichen" />
+         <xsl:apply-templates select="./tns:anrede" />
+         <xsl:apply-templates select="./tns:dienstbezeichnung" />
+         <xsl:apply-templates select="./tns:funktionsbezeichnung" />
+         <xsl:apply-templates select="./tns:referenz" />
+      </div>
+   </details>
+</xsl:template>
+
+<xsl:template match="tns:rollenID">
+   <div class="rollenID">
+      Rollen-ID:&#160;<xsl:value-of select="./tns:id" /><br />
+      Rollen-ID Instanznummer:&#160;<xsl:value-of select="./tns:ref.instanznummer" />
+   </div>   
+</xsl:template>
+
+<xsl:template match="tns:naehereBezeichnung">
+   <div class="naehereBezeichnung">
+      Bezeichnung:&#160;<xsl:value-of select="." />
+   </div>   
+</xsl:template>
+
+<xsl:template match="tns:anrede">
+   <div class="anrede">
+      Anrede:&#160;<xsl:value-of select="." />
+   </div>   
+</xsl:template>
+
+<xsl:template match="tns:dienstbezeichnung">
+   <div class="dienstbezeichnung">
+      Dienstbezeichnung:&#160;<xsl:value-of select="." />
+   </div>   
+</xsl:template>
+
+<xsl:template match="tns:funktionsbezeichnung">
+   <div class="funktionsbezeichnung">
+      Funktionsbezeichnung:&#160;<xsl:value-of select="." />
+   </div>   
+</xsl:template>
+
+<xsl:template match="tns:referenz">
+   <div class="referenz">
+      <!--Implementieren-->
+      Bezug zu:&#160;<xsl:apply-templates select="." />
+   </div>   
+</xsl:template>
+
+<xsl:template match="tns:geschaeftszeichen">
+   <div class="geschaeftszeichen">
+      Geschäftszeichen:&#160;<xsl:value-of select="." />
+   </div>   
+</xsl:template>
+
 <xsl:template match="tns:organisation">
-      <details>
-         <summary>
-            Organisation:
-            <xsl:value-of select="./tns:bezeichnung/tns:bezeichnung.aktuell" />
-         </summary>
-         <div class="organisation">
-            <xsl:apply-templates />
-         </div>
-      </details>
-   </xsl:template>
+   <details>
+      <summary>Organisation:
+         <xsl:value-of select="./tns:bezeichnung/tns:bezeichnung.aktuell" />
+      </summary>
+      <div class="organisation">
+         <xsl:apply-templates />
+      </div>
+   </details>
+</xsl:template>
    
 <xsl:template match="tns:bezeichnung.aktuell">
-      <div class="bezeichnung.aktuell">
-         Organisation:
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="bezeichnung.aktuell">
+      Organisation:
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:bezeichnung.alt">
       <div class="bezeichnung.alt">
@@ -1521,21 +1558,11 @@ th[scope=row] {
          <xsl:value-of select="normalize-space(../tns:anzeigename/text())" />
       </td>
       <td class="col18">
-         <xsl:attribute name="title">
-            <xsl:apply-templates select="./tns:bestandteil" />
-            <xsl:choose>
-               <xsl:when test="../tns:ruecksendung_EEB_erforderlich/text() = 'true'">EEB ist erforderlich</xsl:when>
-               <xsl:otherwise>EEB ist nicht erforderlich</xsl:otherwise>
-            </xsl:choose><br />
-            <xsl:apply-templates select="../tns:verweis" />
-         </xsl:attribute>
          <xsl:apply-templates select="./tns:dateiname" />
       </td>
       <td class="col19">
          <a class="external">
-            <xsl:attribute name="href">
-               <xsl:value-of select="normalize-space(./tns:dateiname/text())" />
-            </xsl:attribute>
+            <xsl:attribute name="href"><xsl:value-of select="$dateipfad" /><xsl:value-of select="normalize-space(./tns:dateiname/text())" /></xsl:attribute>
             <xsl:attribute name="target">_blank</xsl:attribute>
             <div class="externalLink icon">
                <div style="visibility: hidden;">.</div>
@@ -1549,11 +1576,11 @@ th[scope=row] {
       <div class="person">
          <xsl:variable name="beteiligtennummer" select="normalize-space(./tns:ref.beteiligtennummer)" />
          <span class="uppercase">
-            <xsl:value-of select="//tns:beteiligter[./tns:beteiligtennummer=$beteiligtennummer]/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:vollerName/tns:nachname" />
+            <xsl:value-of select="//tns:beteiligter[./tns:beteiligtennummer=$beteiligtennummer]/tns:natuerlichePerson/tns:vollerName/tns:nachname" />
          </span>
-         <xsl:if test="//tns:beteiligter[./tns:beteiligtennummer=$beteiligtennummer]/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:vollerName/tns:vorname">
+         <xsl:if test="//tns:beteiligter[./tns:beteiligtennummer=$beteiligtennummer]/tns:natuerlichePerson/tns:vollerName/tns:vorname">
             , 
-            <xsl:value-of select="//tns:beteiligter[./tns:beteiligtennummer=$beteiligtennummer]/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:vollerName/tns:vorname" />
+            <xsl:value-of select="//tns:beteiligter[./tns:beteiligtennummer=$beteiligtennummer]/tns:natuerlichePerson/tns:vollerName/tns:vorname" />
          </xsl:if>
       </div>
    </xsl:template>
@@ -1569,13 +1596,11 @@ th[scope=row] {
    <xsl:template match="tns:dateiname | tns:dateiname_der_Bezugsdatei">
        <div class="dateilink">
            <a class="datei">
-               <xsl:attribute name="href">
-                   <xsl:value-of select="normalize-space(./text())" />
-               </xsl:attribute>
+               <xsl:attribute name="href"><xsl:value-of select="$dateipfad" /><xsl:value-of select="normalize-space(./text())" /></xsl:attribute>
                <xsl:attribute name="target">preview</xsl:attribute>
                <!-- Standard fordert Notation UUID_Dateiname.Endung, aber nicht alle Datensaetze sind konform - leere Linktexte vermeiden -->
                <xsl:choose>
-                   <xsl:when test="contains(./text(), '_') = 'true'">
+                   <xsl:when test="substring(./text(), 37, 1) = '_'">
                        <xsl:value-of select="substring-after(normalize-space(./text()), '_')" />
                    </xsl:when>
                    <xsl:otherwise>
@@ -1620,12 +1645,11 @@ th[scope=row] {
    </xsl:template>
    <!-- Komplexe Typen -->
    
-<xsl:template name="Type.GDS.NatuerlichePerson" match="tns:aliasNatuerlichePerson | tns:natuerlichePerson | tns:raImVerfahren | tns:eigentuemer.person">
+<xsl:template name="Type.GDS.NatuerlichePerson" match="tns:natuerlichePerson | tns:ra_im_Verfahren | tns:eigentuemer.person">
       <xsl:param name="typ" />
       <details>
          <summary class="summary.natuerlichePerson">
             <xsl:choose>
-               <xsl:when test="$typ='Alias:'">Alias: </xsl:when>
                <xsl:when test="$typ='Eigentümer:'">Eigentümer: </xsl:when>
                <xsl:otherwise>Person: </xsl:otherwise>
             </xsl:choose>
@@ -1657,76 +1681,43 @@ th[scope=row] {
                   </xsl:if>
                </div>
             </xsl:if>
+         <xsl:apply-templates select="./tns:vollerName" />
+         <xsl:apply-templates select="./tns:weitererName" />
+         <xsl:apply-templates select="./tns:geburt" />
+         <xsl:apply-templates select="./tns:tod" />
+         <xsl:apply-templates select="./tns:geschlecht" />
+         <xsl:apply-templates select="./tns:familienstand" />
+         <xsl:apply-templates select="./tns:anschrift" />
+         <xsl:apply-templates select="./tns:staatsangehoerigkeit" />
+         <xsl:apply-templates select="./tns:personalstatut" />
+         <xsl:if test="./tns:beruf">
             <div>
-               <xsl:apply-templates select="./tns:vollerName" />
+               Beruf:
+               <xsl:value-of select="./tns:beruf" />
             </div>
-            <xsl:if test="./tns:geburt">
-               <xsl:apply-templates select="./tns:geburt" />
-            </xsl:if>
-            <xsl:if test="./tns:tod">
-               <xsl:apply-templates select="./tns:tod" />
-            </xsl:if>
-            <xsl:if test="./tns:geschlecht">
-               <xsl:apply-templates select="./tns:geschlecht" />
-            </xsl:if>
-            <xsl:if test="./tns:familienstand">
-               <xsl:apply-templates select="./tns:familienstand" />
-            </xsl:if>
-            <xsl:if test="./tns:anschrift">
+         </xsl:if>
+         <xsl:apply-templates select="./tns:telekommunikation" />
+         <xsl:apply-templates select="./tns:bankverbindung" />
+         <xsl:apply-templates select="./tns:herkunftsland" />
+         <xsl:apply-templates select="./tns:sprache" />
+         <!-- Implementieren auswahl_zustaendige_Institution
+         <xsl:if test="./tns:zustaendigeInstitution">
+            <xsl:for-each select="./tns:zustaendigeInstitution">
                <div>
-                  <xsl:apply-templates select="./tns:anschrift" />
+                  Zuständige Institution:
+                  <xsl:apply-templates select="./tns:ref.rollennummer" />
                </div>
-            </xsl:if>
-            <xsl:apply-templates select="./tns:staatsangehoerigkeit" />
-            <xsl:apply-templates select="./tns:personalstatut" />
-            <xsl:if test="./tns:beruf">
-               <div>
-                  Beruf:
-                  <xsl:value-of select="./tns:beruf" />
-               </div>
-            </xsl:if>
-            <xsl:if test="./tns:telekommunikation">
-               <div>
-                  <xsl:apply-templates select="./tns:telekommunikation" />
-               </div>
-            </xsl:if>
-            <xsl:if test="./tns:bankverbindung">
-               <div>
-                  <xsl:apply-templates select="./tns:bankverbindung" />
-               </div>
-            </xsl:if>
-            <xsl:apply-templates select="./tns:herkunftsland" />
-            <xsl:if test="./tns:sprache">
-               <div>
-                  <xsl:apply-templates select="./tns:sprache" />
-               </div>
-            </xsl:if>
-            <xsl:if test="./tns:zustaendigeInstitution">
-               <xsl:for-each select="./tns:zustaendigeInstitution">
-                  <div>
-                     Zuständige Institution:
-                     <xsl:apply-templates select="./tns:ref.rollennummer" />
-                  </div>
-               </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="./tns:aliasNatuerlichePerson and not(./tns:aliasNatuerlichePerson = '')">
-               <div>
-                  <xsl:apply-templates select="./tns:aliasNatuerlichePerson">
-                     <xsl:with-param name="typ" select="'Alias:'" />
-                  </xsl:apply-templates>
-               </div>
-            </xsl:if>
-            <xsl:apply-templates select="./tns:umsatzsteuerID" />
-            <xsl:if test="./tns:registereintragungNatuerlichePerson">
-               <div>
-                  <xsl:apply-templates select="./tns:registereintragungNatuerlichePerson" />
-               </div>
-            </xsl:if>
-         </div>
-      </details>
-   </xsl:template>
+            </xsl:for-each>
+         </xsl:if>
+     
+         <xsl:apply-templates select="./tns:umsatzsteuerID" />
+         -->
+      </div>
+   </details>
+</xsl:template>
    
 <xsl:template name="Type.GDS.NameNatuerlichePerson" match="tns:vollerName">
+   <div>
       <xsl:if test="./tns:titel">
          <div>
             Titel: 
@@ -1775,251 +1766,243 @@ th[scope=row] {
             <xsl:value-of select="./tns:geburtsname" />
          </div>
       </xsl:if>
-      <xsl:apply-templates select="./tns:weitererName" />
       <xsl:apply-templates select="./tns:vorname.alt" />
       <xsl:apply-templates select="./tns:nachname.alt" />
-   </xsl:template>
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:herkunftsland">
-      <div class="herkunftsland">
-         Herkunftsland: 
-         <xsl:apply-templates select="./tns:auswahl_staat" />
-      </div>
-   </xsl:template>
+   <div class="herkunftsland">
+      Herkunftsland: 
+      <xsl:apply-templates select="./tns:auswahl_staat" />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:staatsangehoerigkeit">
-      <div class="herkunftsland">
-         Staatsangehörigkeit: 
-         <xsl:apply-templates select="./tns:auswahl_staat" />
-      </div>
-   </xsl:template>
+   <div class="herkunftsland">
+      Staatsangehörigkeit: 
+      <xsl:apply-templates select="./tns:auswahl_staat" />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:weitererName">
-      <div class="weitererName">
-         Weiterer Name: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="weitererName">
+      Weiterer Name: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:vorname.alt">
-      <div class="vorname.alt">
-         Vorname (alt): 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="vorname.alt">
+      Vorname (alt): 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:nachname.alt">
-      <div class="nachname.alt">
-         Nachname (alt): 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="nachname.alt">
+      Nachname (alt): 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template name="nameAllgemein">
-      <xsl:if test="./tns:vollerName/tns:titel">
-         <xsl:value-of select="./tns:vollerName/tns:titel" />
-          
-      </xsl:if>
-      <xsl:if test="./tns:vollerName/tns:vorname">
-         <xsl:value-of select="./tns:vollerName/tns:vorname" />
-          
-      </xsl:if>
-      <xsl:if test="./tns:vollerName/tns:namensvorsatz">
-         <xsl:value-of select="./tns:vollerName/tns:namensvorsatz" />
-          
-      </xsl:if>
-      <xsl:if test="./tns:vollerName/tns:nachname">
-         <span class="uppercase">
-            <xsl:value-of select="./tns:vollerName/tns:nachname" />
-         </span>
-      </xsl:if>
-   </xsl:template>
+   <xsl:if test="./tns:vollerName/tns:titel"><xsl:value-of select="./tns:vollerName/tns:titel" />&#160;</xsl:if>
+   <xsl:if test="./tns:vollerName/tns:vorname"><xsl:value-of select="./tns:vollerName/tns:vorname" />&#160;</xsl:if>
+   <xsl:if test="./tns:vollerName/tns:namensvorsatz"><xsl:value-of select="./tns:vollerName/tns:namensvorsatz" />&#160;</xsl:if>
+   <xsl:if test="./tns:vollerName/tns:nachname">
+      <span class="uppercase">
+         <xsl:value-of select="./tns:vollerName/tns:nachname" />
+      </span>   
+   </xsl:if>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Tod" match="tns:tod">
-      <details class="tod.details">
-         <summary>
-            Sterbedatum: 
-            <xsl:if test="./tns:sterbedatum">
-               <xsl:value-of select="./tns:sterbedatum" />
-            </xsl:if>
-            <xsl:if test="./tns:sterbedatumZeitraum">
-               <xsl:apply-templates select="./tns:sterbedatumZeitraum" />
-            </xsl:if>
-         </summary>
-         <div class="tod">
-            <xsl:apply-templates select="./tns:sterbeort" />
-            <xsl:apply-templates select="./tns:sterbestandesamtBehoerdennummer" />
-            <xsl:apply-templates select="./tns:sterbestandesamtName" />
-            <xsl:apply-templates select="./tns:sterberegisternummer" />
-            <xsl:apply-templates select="./tns:eintragungsdatum" />
-            <xsl:apply-templates select="./tns:sterberegisterart" />
-            <xsl:if test="./tns:todErklaert = 'true'">
-               <div>Tod wurde erklärt.</div>
-            </xsl:if>
-         </div>
-      </details>
-   </xsl:template>
+   <details class="tod.details">
+      <summary>
+         Sterbedatum: 
+         <xsl:if test="./tns:sterbedatum">
+            <xsl:value-of select="./tns:sterbedatum" />
+         </xsl:if>
+         <xsl:if test="./tns:sterbedatumZeitraum">
+            <xsl:apply-templates select="./tns:sterbedatumZeitraum" />
+         </xsl:if>
+      </summary>
+      <div class="tod">
+         <xsl:apply-templates select="./tns:sterbeort" />
+         <xsl:apply-templates select="./tns:sterbestandesamtBehoerdennummer" />
+         <xsl:apply-templates select="./tns:sterbestandesamtName" />
+         <xsl:apply-templates select="./tns:sterberegisternummer" />
+         <xsl:apply-templates select="./tns:eintragungsdatum" />
+         <xsl:apply-templates select="./tns:sterberegisterart" />
+         <xsl:if test="./tns:todErklaert = 'true'">
+            <div>Tod wurde erklärt.</div>
+         </xsl:if>
+      </div>
+   </details>
+</xsl:template>
    
 <xsl:template match="tns:eintragungsdatum">
-      <div class="eintragungsdatum">
-         Eintragungsdatum: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="eintragungsdatum">
+      Eintragungsdatum: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:sterberegisternummer">
-      <div class="sterberegisternummer">
-         Sterberegisternr.: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="sterberegisternummer">
+      Sterberegisternr.: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:sterbestandesamtBehoerdennummer">
-      <div class="sterbestandesamtBehoerdennummer">
-         StAmt-Behördennr.: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="sterbestandesamtBehoerdennummer">
+      StAmt-Behördennr.: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:sterbestandesamtName">
-      <div class="sterbestandesamtName">
-         StAmt-Name: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="sterbestandesamtName">
+      StAmt-Name: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template name="Code.GDS.Registerart" match="tns:register | tns:sterberegisterart | tns:registerart ">
-      <div class="register">
-         Register: 
-         <xsl:call-template name="cl_register">
-            <xsl:with-param name="liste" select="'Code.GDS.Registerart'" />
-            <xsl:with-param name="code" select="normalize-space(.)" />
-         </xsl:call-template>
-      </div>
-   </xsl:template>
+   <div class="register">
+      Register: 
+      <xsl:call-template name="cl_register">
+         <xsl:with-param name="liste" select="'Code.GDS.Registerart'" />
+         <xsl:with-param name="code" select="normalize-space(.)" />
+      </xsl:call-template>
+   </div>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Xdomea.ZeitraumType" match="tns:zeitraum | tns:ausschlusszeitraum | tns:ehezeit | tns:zeitraum.unterhaltsrueckstand | tns:sonstigerZeitraum | tns:zeitraumZuordnung | tns:sterbedatumZeitraum | tns:laufzeit">
-      <xsl:value-of select="./tns:beginn" />
-      -
-      <xsl:value-of select="./tns:ende" />
-   </xsl:template>
+   <xsl:value-of select="./tns:beginn" />
+   -
+   <xsl:value-of select="./tns:ende" />
+</xsl:template>
    
 <xsl:template name="Code.GDS.Sprachen" match="tns:sprache">
-      <div class="sprache">
-         Sprache: 
-         <xsl:call-template name="cl_allgemein">
-            <xsl:with-param name="liste" select="'Code.GDS.Sprachen'" />
-            <xsl:with-param name="code" select="normalize-space(.)" />
-         </xsl:call-template>
-      </div>
-   </xsl:template>
+   <div class="sprache">
+      Sprache: 
+      <xsl:call-template name="cl_allgemein">
+         <xsl:with-param name="liste" select="'Code.GDS.Sprachen'" />
+         <xsl:with-param name="code" select="normalize-space(.)" />
+      </xsl:call-template>
+   </div>
+</xsl:template>
    
 <xsl:template name="Code.GDS.Geschlecht" match="tns:geschlecht">
-      <div class="geschlecht">
-         Geschlecht: 
-         <xsl:call-template name="cl_allgemein">
-            <xsl:with-param name="liste" select="'Code.GDS.Geschlecht'" />
-            <xsl:with-param name="code" select="normalize-space(.)" />
-         </xsl:call-template>
-      </div>
-   </xsl:template>
+   <div class="geschlecht">
+      Geschlecht: 
+      <xsl:call-template name="cl_allgemein">
+         <xsl:with-param name="liste" select="'Code.GDS.Geschlecht'" />
+         <xsl:with-param name="code" select="normalize-space(.)" />
+      </xsl:call-template>
+   </div>
+</xsl:template>
    
 <xsl:template name="Code.GDS.Familienstand" match="tns:familienstand">
-      <div class="familienstand">
-         Familienstand: 
-         <xsl:call-template name="cl_allgemein">
-            <xsl:with-param name="liste" select="'Code.GDS.Familienstand'" />
-            <xsl:with-param name="code" select="normalize-space(.)" />
-         </xsl:call-template>
-      </div>
-   </xsl:template>
+   <div class="familienstand">
+      Familienstand: 
+      <xsl:call-template name="cl_allgemein">
+         <xsl:with-param name="liste" select="'Code.GDS.Familienstand'" />
+         <xsl:with-param name="code" select="normalize-space(.)" />
+      </xsl:call-template>
+   </div>
+</xsl:template>
    
 <xsl:template name="Code.GDS.Personalstatut" match="tns:personalstatut">
-      <div class="personalstatut">
-         Personalstatut: 
-         <xsl:call-template name="cl_personalstatut">
-            <xsl:with-param name="liste" select="'Code.GDS.Personalstatut'" />
-            <xsl:with-param name="code" select="normalize-space(.)" />
-         </xsl:call-template>
-      </div>
-   </xsl:template>
+   <div class="personalstatut">
+      Personalstatut: 
+      <xsl:call-template name="cl_personalstatut">
+         <xsl:with-param name="liste" select="'Code.GDS.Personalstatut'" />
+         <xsl:with-param name="code" select="normalize-space(.)" />
+      </xsl:call-template>
+   </div>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Geburt" match="tns:geburt">
-      <details class="details.geburt">
-         <summary class="summary.geburt">
-            Geburtsdatum: 
-            <xsl:if test="./tns:geburtsdatum">
-               <xsl:value-of select="./tns:geburtsdatum" />
-            </xsl:if>
-            <xsl:if test="./tns:geburtsdatum.unbekannt = 'true'">unbekannt</xsl:if>
-         </summary>
-         <div class="geburt">
-            <xsl:apply-templates select="./tns:geburtsort" />
-            <xsl:apply-templates select="./tns:geburtsname.mutter" />
-            <xsl:if test="./tns:name.eltern and not(./tns:name.eltern = '')">
-               <div>
-                  <u>Name(n) der Eltern</u>
-               </div>
-               <xsl:apply-templates select="./tns:name.eltern/tns:nachname.vater" />
-               <xsl:apply-templates select="./tns:name.eltern/tns:vorname.vater" />
-               <xsl:apply-templates select="./tns:name.eltern/tns:nachname.mutter" />
-               <xsl:apply-templates select="./tns:name.eltern/tns:vorname.mutter" />
-            </xsl:if>
-         </div>
-      </details>
-   </xsl:template>
+   <details class="details.geburt">
+      <summary class="summary.geburt">
+         Geburtsdatum: 
+         <xsl:if test="./tns:geburtsdatum">
+            <xsl:value-of select="./tns:geburtsdatum" />
+         </xsl:if>
+         <xsl:if test="./tns:geburtsdatum.unbekannt = 'true'">unbekannt</xsl:if>
+      </summary>
+      <div class="geburt">
+         <xsl:apply-templates select="./tns:geburtsort" />
+         <xsl:apply-templates select="./tns:geburtsname.mutter" />
+         <xsl:if test="./tns:name.eltern and not(./tns:name.eltern = '')">
+            <div>
+               <u>Name(n) der Eltern</u>
+            </div>
+            <xsl:apply-templates select="./tns:name.eltern/tns:nachname.vater" />
+            <xsl:apply-templates select="./tns:name.eltern/tns:vorname.vater" />
+            <xsl:apply-templates select="./tns:name.eltern/tns:nachname.mutter" />
+            <xsl:apply-templates select="./tns:name.eltern/tns:vorname.mutter" />
+         </xsl:if>
+      </div>
+   </details>
+</xsl:template>
    
 <xsl:template match="tns:geburtsname.mutter">
-      <div class="geburtsname.mutter">
-         Geburtsname der Mutter: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="geburtsname.mutter">
+      Geburtsname der Mutter: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Ortsangabe" match="tns:geburtsort">
-      <xsl:apply-templates select="./tns:ort" />
-      <xsl:apply-templates select="./tns:staat" />
-   </xsl:template>
+   <xsl:apply-templates select="./tns:ort" />
+   <xsl:apply-templates select="./tns:staat" />
+</xsl:template>
    
 <xsl:template match="tns:staat">
-      <!-- Nur ausführen, wenn auswahl_staat folgt -->
-      <xsl:if test="./tns:auswahl_staat">
-         <div class="staat">
-            Staat: 
-            <xsl:apply-templates select="./tns:auswahl_staat" />
-         </div>
-      </xsl:if>
-   </xsl:template>
+   <!-- Nur ausführen, wenn auswahl_staat folgt -->
+   <xsl:if test="./tns:auswahl_staat">
+      <div class="staat">
+         Staat: 
+         <xsl:apply-templates select="./tns:auswahl_staat" />
+      </div>
+   </xsl:if>
+</xsl:template>
    
 <xsl:template match="tns:nachname.vater">
-      <div class="nachname.vater">
-         Nachname Vater: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="nachname.vater">
+      Nachname Vater: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:vorname.vater">
-      <div class="vorname.vater">
-         Vorname Vater: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="vorname.vater">
+      Vorname Vater: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:nachname.mutter">
-      <div class="nachname.mutter">
-         Nachname Mutter: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="nachname.mutter">
+      Nachname Mutter: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:vorname.mutter">
-      <div class="vorname.mutter">
-         Vorname Mutter: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="vorname.mutter">
+      Vorname Mutter: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Anschrift" match="tns:anschrift | tns:sterbeort">
+   <div>
       <details class="details.anschrift">
          <summary class="summary.anschrift">
             Anschrift 
@@ -2042,10 +2025,10 @@ th[scope=row] {
             <xsl:if test="./tns:strasse">
                <div>
                   <xsl:value-of select="./tns:strasse" />
-                   
+                     
                   <xsl:value-of select="./tns:hausnummer" />
                   <xsl:if test="./tns:anschriftenzusatz">
-                      // 
+                        // 
                      <xsl:value-of select="./tns:anschriftenzusatz" />
                   </xsl:if>
                </div>
@@ -2059,7 +2042,7 @@ th[scope=row] {
             <div>
                <xsl:value-of select="./tns:postleitzahl" />
                <xsl:if test="./tns:postleitzahl.unbekannt/text() = 'true'">- Postleitzahl unbekannt -</xsl:if>
-                
+                  
                <xsl:value-of select="./tns:ort" />
                <xsl:if test="./tns:ort.unbekannt/text() = 'true'">- Ort unbekannt -</xsl:if>
             </div>
@@ -2068,38 +2051,38 @@ th[scope=row] {
             <xsl:apply-templates select="././tns:erfassungsdatum" />
          </div>
       </details>
-   </xsl:template>
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:wohnungsgeber">
-      <div class="wohnungsgeber">
-         Wohnungsgeber: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="wohnungsgeber">
+      Wohnungsgeber: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:erfassungsdatum">
-      <div class="erfassungsdatum">
-         Erfassungsdatum: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="erfassungsdatum">
+      Erfassungsdatum: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template name="Code.GDS.Anschriftstyp" match="tns:anschriftstyp">
-      <xsl:call-template name="cl_allgemein">
-         <xsl:with-param name="liste" select="'Code.GDS.Anschriftstyp'" />
-         <xsl:with-param name="code" select="normalize-space(.)" />
-      </xsl:call-template>
-   </xsl:template>
+   <xsl:call-template name="cl_allgemein">
+      <xsl:with-param name="liste" select="'Code.GDS.Anschriftstyp'" />
+      <xsl:with-param name="code" select="normalize-space(.)" />
+   </xsl:call-template>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Staat" match="tns:auswahl_staat">
-      <xsl:call-template name="GDS.Staaten">
-         <xsl:with-param name="code" select="normalize-space(./tns:staat)" />
-      </xsl:call-template>
-      <!-- Kürzel auflösen implementieren ??? -->
-      <xsl:value-of select="./tns:staat.alternativ" />
-   </xsl:template>
+   <xsl:call-template name="GDS.Staaten">
+      <xsl:with-param name="code" select="normalize-space(./tns:staat)" />
+   </xsl:call-template>
+   <!-- Kürzel auflösen implementieren ??? -->
+   <xsl:value-of select="./tns:staat.alternativ" />
+</xsl:template>
 
-<!--   
 <xsl:template name="Type.GDS.Kommunikation" match="tns:telekommunikation">
       <div class="telekommunikation">
          <xsl:call-template name="cl_telekommunikation">
@@ -2118,10 +2101,11 @@ th[scope=row] {
          <xsl:value-of select="./tns:verbindung" />
       </div>
 </xsl:template>
--->
+
    <!---Bankdaten -->
    
 <xsl:template name="Type.GDS.Bankverbindung" match="tns:bankverbindung">
+   <div>
       <details class="details.bankverbindung">
          <summary>Bankverbindung</summary>
          <div class="bankverbindung">
@@ -2138,100 +2122,101 @@ th[scope=row] {
             </xsl:choose>
          </div>
       </details>
-   </xsl:template>
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:bankverbindungsnummer">
-      <div class="bankverbindungsnummer">
-         Bankverbindungsnummer: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="bankverbindungsnummer">
+      Bankverbindungsnummer: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:bank">
-      <div class="bank">
-         Bank: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="bank">
+      Bank: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:kontoinhaber">
-      <div class="kontoinhaber">
-         Kontoinhaber: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="kontoinhaber">
+      Kontoinhaber: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:iban">
-      <div class="iban">
-         IBAN: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="iban">
+      IBAN: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:bic">
-      <div class="bic">
-         BIC: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="bic">
+      BIC: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:verwendungszweck">
-      <div class="verwendungszweck">
-         Verwendungszweck: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
-   <!-- Registerdaten -->
+   <div class="verwendungszweck">
+      Verwendungszweck: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
+<!-- Registerdaten -->
    
 <xsl:template match="tns:registereintragungNatuerlichePerson">
-      <xsl:apply-templates />
-   </xsl:template>
+   <xsl:apply-templates />
+</xsl:template>
    
 <xsl:template match="tns:verwendeteFirma">
-      <div class="verwendeteFirma">
-         Firma:
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
-   
+   <div class="verwendeteFirma">
+      Firma:
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
+
 <xsl:template match="tns:weitereBezeichnung">
-      <div class="weitereBezeichnung">
-         Weitere Bezeichnung:
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="weitereBezeichnung">
+      Weitere Bezeichnung:
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Registrierung" match="tns:registereintragung">
-      <details class="details.registrierung">
-         <summary>Registrierung</summary>
-         <div class="registrierung">
-            <xsl:apply-templates />
-         </div>
-      </details>
-   </xsl:template>
+   <details class="details.registrierung">
+      <summary>Registrierung</summary>
+      <div class="registrierung">
+         <xsl:apply-templates />
+      </div>
+   </details>
+</xsl:template>
    
 <xsl:template match="tns:gericht | tns:abgebende_Stelle">
-      <div class="gericht">
-         Gericht:
-         <xsl:call-template name="GDS.Gerichte">
-            <xsl:with-param name="code" select="normalize-space(./code)" />
-         </xsl:call-template>
-      </div>
-   </xsl:template>
+   <div class="gericht">
+      Gericht:
+      <xsl:call-template name="GDS.Gerichte">
+         <xsl:with-param name="code" select="normalize-space(./code)" />
+      </xsl:call-template>
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:registerbehoerde">
-      <div class="registerbehoerde">
-         Registerbehörde:
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="registerbehoerde">
+      Registerbehörde:
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:registerbezeichnung">
-      <div class="registerbezeichnung">
-         Registerbezeichnung:
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="registerbezeichnung">
+      Registerbezeichnung:
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:registernummer">
       <div class="registernummer">
@@ -2289,29 +2274,35 @@ th[scope=row] {
          <div class="kanzlei">
             <xsl:apply-templates select="./tns:bezeichnung/tns:bezeichnung.alt" />
             <xsl:apply-templates select="./tns:anschrift" />
-            <xsl:apply-templates select="./tns:raImVerfahren" />
+            <xsl:apply-templates select="./tns:anschrift.gerichtsfach" />
+            <xsl:apply-templates select="./tns:ra_im_Verfahren" />
             <xsl:apply-templates select="./tns:kanzleiform" />
             <xsl:apply-templates select="./tns:geschlecht" />
             <xsl:apply-templates select="./tns:rechtsform" />
             <xsl:apply-templates select="./tns:telekommunikation" />
-            <xsl:apply-templates select="./tns:umsatzsteuerID" />
          </div>
       </details>
    </xsl:template>
    
+<xsl:template match="tns:anschrift.gerichtsfach">
+   <div class="tns:anschrift.gerichtsfach">
+      Gerichtsfach:&#160;<xsl:apply-templates select="./tns:gericht" />&#160;<xsl:value-of select="./tns:fach" />   
+   </div>
+</xsl:template>
+
 <xsl:template match="tns:bezeichnung.alt">
-      <div class="bezeichnung.alt">
-         Vormals: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="bezeichnung.alt">
+      Vormals: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template match="tns:umsatzsteuerID">
-      <div class="umsatzsteuerID">
-         UmsatzsteuerID: 
-         <xsl:value-of select="." />
-      </div>
-   </xsl:template>
+   <div class="umsatzsteuerID">
+      UmsatzsteuerID: 
+      <xsl:value-of select="." />
+   </div>
+</xsl:template>
    
 <xsl:template name="Type.GDS.Beteiligter" match="tns:beteiligter">
       <xsl:apply-templates select="./tns:ra.kanzlei" />
@@ -2320,18 +2311,18 @@ th[scope=row] {
    </xsl:template>
    
 <xsl:template name="Type.GDS.Ref.Rollennummer" match="tns:referenz | tns:sonstigeRegisterbeteiligte | tns:referenzierungBevollmaechtigter | tns:vollmachtgeber | tns:betroffener | tns:ref.rollennummer | tns:teilnehmer | tns:vielmelder | tns:rueckgabeempfaenger | tns:versorgungstraeger | tns:versicherter | tns:andererEhegatte | tns:empfaengerDesAuskunftsersuchens | tns:versicherungstraeger | tns:ausgleichspflichtiger | tns:ausgleichsberechtigter | tns:zielversorgungstraeger.ausgleichsberechtigter | tns:versorgungstraeger.ausgleichpflichtiger | tns:betroffenerRechtstraeger | tns:urkundsperson | tns:vertretungsberechtigte | tns:empfangsberechtigte | tns:unternehmensteile | tns:sonstigeRegisterbeteiligte | tns:datenKommanditist | tns:datenMitgliedEWIV | tns:referenz.glaeubiger | tns:schuldner | tns:referenz.schuldner | tns:drittschuldner | tns:aussteller | tns:notar | tns:referenzZuDrittschuldner.arbeitseinkommen | tns:unpfaendbarerBetragBeiEinkommenDrittschuldner | tns:drittschuldner.sozialleistung | tns:anzeigenerstatter | tns:personenbezug | tns:besucher | tns:zustellungsempfaenger | tns:eingelegtFuer | tns:untersuchter | tns:herausgabe | tns:eintragungsbehoerde | tns:eingelegtDurch | tns:referenzZuDrittschuldner.arbeitseinkommen | tns:antragsteller | tns:sachbearbeiter | tns:antragsgegner | tns:bevollmaechtigter | tns:auszahlungskonto">
-      <xsl:variable name="rollennummer" select="." />
-      <xsl:call-template name="cl_rollenbezeichnung">
-         <xsl:with-param name="liste" select="'Code.GDS.Rollenbezeichnung'" />
-         <xsl:with-param name="code" select="//tns:rollennummer[text() = $rollennummer]/../tns:rollenbezeichnung" />
-      </xsl:call-template>
-       
-      <xsl:for-each select="//tns:beteiligung">
-         <xsl:if test="contains(tns:rolle/tns:rollennummer, $rollennummer)">
-            <xsl:value-of select=".//tns:bezeichnung.aktuell" />
-            <!-- ungetestet -->
-            <xsl:call-template name="nameAllgemein" select="./tns:beteiligter/tns:auswahl_beteiligter/tns:natuerlichePerson" />
-         </xsl:if>
-      </xsl:for-each>
-   </xsl:template>
+   <xsl:variable name="rollennummer" select="." />
+   <xsl:call-template name="cl_rollenbezeichnung">
+      <xsl:with-param name="liste" select="'Code.GDS.Rollenbezeichnung'" />
+      <xsl:with-param name="code" select="//tns:rollennummer[text() = $rollennummer]/../tns:rollenbezeichnung" />
+   </xsl:call-template>
+      
+   <xsl:for-each select="//tns:beteiligung">
+      <xsl:if test="contains(tns:rolle/tns:rollennummer, $rollennummer)">
+         <xsl:value-of select=".//tns:bezeichnung.aktuell" />
+         <!-- ungetestet -->
+         <xsl:call-template name="nameAllgemein" select="./tns:beteiligter/tns:natuerlichePerson" />
+      </xsl:if>
+   </xsl:for-each>
+</xsl:template>
 </xsl:stylesheet>
