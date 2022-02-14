@@ -4,6 +4,8 @@ A small application that creates a browser based viewer for XJustiz XML Files
 "[...]XJustiz ist ein zur Realisierung des elektronischen Rechtsverkehrs entwickelter Datensatz, der grundlegende Festlegungen für den Austausch strukturierter Daten zwischen den Prozessbeteiligten (Bürgern, Unternehmen, Rechtsanwälten, IHKs) und den Gerichten enthält.[...]"
 Siehe https://xjustiz.justiz.de/
 
+**Update: Die Arbeit an diesem Projekt wurde eingestellt. Einen kostenlosen, quelloffenen XJustiz Viewer des Autors zur Desktopinstallation finden Sie unter https://openXJV.de oder hier auf Github unter https://github.com/digidigital/openXJV**
+
 Dieser Datensatz wird bei der Kommunikation mittels EGVP, beA, eBO, beBPo, etc. eingesetzt. Besondere Relevanz hat in diesem Zusammenhang auch die Akteneinsicht, die von immer mehr Behörden in Form von PDF-Dateien und begleitendem XJustiz-Datensatz gewährt wird.   
 
 Sofern kein Akteneinsichtsportal angebunden wird, ist zur Anzeige ein geeignetes Anzeigeprogramm / XJustiz-Viewer notwendig. Stand März/2021 ist mir kein kommerzielles Produkt bekannt, das den Standard in der geschilderten Form unterstützt. Eine bereits existierende Alternative stellt der XJustiz-Viewer von https://ervjustiz.de/ dar. Dieser ist jedoch nur auf Anfrage verfügbar und nicht quelloffen.
